@@ -1,0 +1,44 @@
+body { color: #000000; background: #ffffff; }
+
+.page-layout {
+ width: 100%; color: #000000; background: #ffffff;
+ border: #000000 1px solid;
+}
+.page-title {
+ text-align: center; font-size: x-large; color: #000000; background: #cccccc;
+ border: #000000 1px solid;
+}
+.page-menu { width: 150px; vertical-align: top; }
+.page-content { vertical-align: top; }
+
+.menuitems a {
+ display: block; text-align: center; text-decoration: none;
+ padding-right: 10px; padding-left: 10px; padding-top: 5px; padding-bottom: 5px;
+}
+.menuitems a:hover {
+ color: #000000; background: #cccccc;
+ display: block; text-align: center; text-decoration: none;
+ padding-right: 10px; padding-left: 10px; padding-bottom: 5px;
+}
+
+.content { width: 630px; }
+
+.warning {
+ display: block; color: #000000; background: #ffffff; border: #ff0000 1px solid;
+ font-weight: bold; text-align: margin-top: 15px;
+ padding-right: 15px; padding-left: 15px; padding-bottom: 15px; padding-top: 15px;
+}
+.warning-title
+{
+ display: block; color: #ffffff; background: #ff0000;
+ text-decoration: underline; margin-bottom: 10px;
+}
+
+.box { border: #000000 1px solid; margin-top: 15px; }
+.box p { padding-left: 5px; padding-right: 5px; padding-top: 5px; margin-top: 0px; margin-bottom: 5px; }
+.box ul { padding-top: 0px; padding-left: 22px; margin-top: 5px; margin-bottom: 5px; }
+.box li { margin-bottom: 10px; }
+.box-title {
+ font-weight: bold; color: #000000; background: #cccccc; border-bottom: #000000 1px solid;
+ padding-left: 5px; padding-right: 5px; padding-top: 0px; padding-bottom: 0px;
+}

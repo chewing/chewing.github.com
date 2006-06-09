@@ -1,7 +1,7 @@
-0.3.2.1
+0.3.2.2
 2006.06.09
-http://chewing.csie.net/news.html#win32_chewing_032
-新酷音輸入法 0.3.2.1 釋出了！
+http://chewing.csie.net/news.html#win32_chewing_0322
+新酷音輸入法 0.3.2.2 釋出了！
 1. 新功能：使用 ` 鍵，開啟符號表
 2. 全新的符號表操作，可自訂符號表
 3. 取消 Ctrl + 1 開啟符號表的功能
@@ -10,3 +10,4 @@ http://chewing.csie.net/news.html#win32_chewing_032
 6. 改良核心內部
 7. 大幅改良安裝程式，並縮減安裝程式大小
 8. 更新詞庫到最新版本
+9. 修正安裝程式內的嚴重錯誤

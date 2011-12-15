@@ -1,4 +1,4 @@
-header {
+body > header {
 	text-align: center;
 }
 
@@ -25,9 +25,9 @@ nav ul li {
 	padding: 1em;
 }
 
+
+
 footer {
-	position: fixed;
-	bottom: 0;
 	padding: 2em;
 	text-align: center;
 	width: 100%;

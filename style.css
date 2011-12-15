@@ -3,10 +3,31 @@ header {
 }
 
 #main {
-	margin: 0 auto;
-	width: 30em;
+        margin: 0 auto;
+}
+
+nav {
+	padding: 1em;
+	width: 10em;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	margin-bottom: 0.5em;
+}
+
+#content {
+	margin-left: 12em;
+	padding-left: 2em;
 }
 
 footer {
+	position: fixed;
+	bottom: 0;
+	padding: 2em;
 	text-align: center;
+	width: 100%;
 }

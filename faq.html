@@ -1,183 +1,142 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<?xml version="1.0" encoding="UTF-8" ?>
-<html>
-	<head>
-		<title>Chewing - Headquarter of Intelligent Chinese Phonetic Input Method 
-			Development</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="style.css" type="text/css"></link>
-	</head>
-	<body>
-		<table class="page-layout" summary="layout table">
-			<tr>
-				<td class="page-title" colspan="2">
-					<img src="logo/48x48.png" alt="Chewing Project logo" align="right" hspace="10" width="48"
-						height="48"> <b>Chewing / 新酷音</b>:<br>
-					智慧型注音輸入法發展總部
-				</td>
-			</tr>
-			<tr>
-				<td class="page-menu"><!-- BEGIN  menu -->
-					<div class="box">
-						<div class="box-title">Menu</div>
-						<div class="menuitems">
-							<a href="index.html">Home</a> <a href="credit.html">About &amp; Credit</a> <a href="news.html">
-								News</a> <a href="mailinglists.html">Mailinglists</a> <a href="requirements.html">
-								Requirements</a> <a href="download.html">Download</a> <a href="screenshots.html">
-								Screenshots</a> <a href="faq.html">FAQ</a> <a href="license.html">License</a>
-							<a href="http://code.google.com/p/chewing/issues/list">Bugs</a>  <!--    <a href="todo.html">ToDo</a>    <a href="bugs.html">Bugs &amp; Patches</a>    -->
-							<a href="links.html">Links</a>
-						</div>
-					</div> <!-- END menu -->
-				</td>
-				<td class="page-content"><!-- BEGIN warning -->
-					<div class="warning">
-						<div class="warning-title">Note / 注意</div>
-						<ul>
-							<li>
-								新酷音是延續著名的「酷音輸入法」的發展計畫
-							<li>
-								為了避免名稱混淆，本發展計畫特稱為「新酷音」</li>
-						</ul>
-					</div> <!-- END warning --> <!-- BEGIN about -->
-					<div class="box">
-						<div class="box-title">FAQ</div>
-						<h1>新酷音輸入法常見問題QA
-						</h1>
-						<P><FONT face="新細明體"><a href="#project">專案介紹</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#win32">
-									Win32平台常見問題</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#unixlike">Unix-like 
-									平台常見問題</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#bugreport">問題回報與建議</a></FONT></P>
-						<P><FONT face="新細明體"><a name="project">專案介紹：</a></FONT></P>
-						<p>Q1：新酷音輸入法是什麼？</p>
-						<p>A：最早的酷音輸入法是龔律全與陳康本兩人的資訊專題（分別在兩人就讀台大資工系與台大電機系的時期），由中央研究院資訊研究所的徐讚昇博士提供技術指導與超過兩年的經濟及設備支援，最終的成果選擇以GPL 
-							授權釋出，可說是 XIM (X Input Method) 中最接近新注音或是自然輸入法的實作。<br>
-							但是酷音輸入法的兩位原創者已不再維護，後續的發展由許多熱心的朋友移植到不同的平台上，諸如 TimHsu (crazykid) 與 jserv 維護的 
-							JMCCE 1.4.x 中文終端機內建酷音輸入法、clkao 移植酷音到 MacOS X 與 IIIMF 架構，以及 gugod 接手 clkao 的 
-							ChewingOSX 後，大幅改善實作的 SpaceChewing 計畫等。而新酷音就是扮演整合這些分支的角色，並且更廣泛移植與改良酷音輸入法的適用性，並且於 
-							2004 年 12 月有獨立的專案資源，到目前為止，已有許多熱心的貢獻者加入開發行列，期待更多的朋友參與。
-						</p>
-						<p>Q2：新酷音有在哪幾種平台上運行？</p>
-						<p>A：目前新酷音可以在&nbsp;MS-Windows、Linux、 FreeBSD、Solaris，以及 Mac OS X&nbsp;上運行。</p>
-						<p>Q3：我在哪邊可以下載到新酷音程式？</p>
-						<p>A：在 <a href="http://chewing.csie.net/">新酷音主站</a>&nbsp;的&nbsp;<a href="http://chewing.csie.net/download/">download</a>&nbsp; 
-							這邊可以找到各式版本。</p>
-						<p><a name="win32">Win32 平台常見問題：</a></p>
-						<p>Q1：我已經下載了新版的新酷音程式，我要如何安裝？</p>
-						<p>A：只要執行該程式，安裝精靈會自動完成所有步驟，使用者要做的事就是按 下一步 下一步.....。</p>
-						<p>Q2：安裝過程中，發生了&nbsp;chewing.ime&nbsp;無法寫入的問題，請問要如何解決？</p>
-						<p>A：chewing.ime&nbsp;無法寫入是因為被系統鎖住，可以先中斷安裝程序，請依照下列步驟：</p>
-						<p>For windows2000/xp：</p>
-						<ol>
-							<li>
-							請由&nbsp;開始-&gt;控制台-&gt;地區及語言選項-&gt;語言-&gt;詳細資料，在預設輸入語言的選項， 
-							將預設輸入語言由新酷音改為其他輸入法；若原本的設定非新酷音輸入法，可略過。
-							<li>
-							重新開機或是重新登入系統。
-							<li>
-								再次執行安裝程式。</li>
-						</ol>
-						<p>Q3：我是&nbsp;windows9x/ME&nbsp;的使用者，安裝新酷音輸入法後無法輸入文字，請問這該如何解決？</p>
-						<p>A：win32 新酷音0.3.4.2版已解決此問題，請安裝新版</p>
-						<p>Q4：系統出現 buffer overrun (緩衝區溢位) 警告訊息，請問我該怎麼辦？</p>
-						<p>A：系統發生 buffer overrun 的問題，有可能是使用者詞庫 (損壞所引起，請把使用者詞庫刪除或是刪去其中損壞的字串，應可解決。如果刪除使用者詞庫 
-							(檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and 
-							Settings\使用者帳號\ApplicationData\Chewing\) 後還是發生此問題，請來信告知 (聯絡 E-Mail 請見 <a href="#bugreport">問題回報與建議</a>Q2)。</p>
-						<p>Q5：新酷音輸入法有使用手冊嗎？</p>
-						<p>A：有。使用手冊：開始-&gt;程式集-&gt;新酷音輸入法-&gt;新酷音輸入法使用說明，或是可以在 輸入法工具列最右邊的按鈕中找到。</p>
-						<p>Q6：本地詞庫編輯工具那是什麼？如何使用？</p>
-						<p>A：本地詞庫編輯工具可以讓使用者編輯動態詞庫&nbsp;(相對於靜態詞庫、內建詞庫)&nbsp;，詳細的使用方法請見說明手冊。</p>
-						<p>Q7：我裝好新酷音了，可是第一次啟動新酷音的時候會有些時間上的延遲，請問這是怎麼回事？</p>
-						<p>
-						A：第一次載入新酷音的時候，因為程式為載入詞庫，所以啟動會比較慢。您可以修改登錄檔&nbsp;(registry)&nbsp;，讓系統開機自動執行 
-						chewingserver.exe&nbsp;，以下是修改方法：
-						<p>For windows2000/xp：</p>
-						<ol>
-							<li>
-							請由&nbsp;開始-&gt;執行
-							<li>
-							輸入 regedit 開啟登錄檔編輯器
-							<li>
-							進去找到 HKEY_CURRENT_USER\Software\Microsoft\Windows\Current Version\Run
-							<li>
-							然後在右側視窗按下右鍵新增字串
-							<li>
-							名稱隨便取(建議取個好記的名稱)
-							<li>
-								字串的內容是 c:\windows\system32\IME\Chewing\ChewingServer.exe (windows2000 的路徑是 
-								c:\winNT\system32\IME\Chewing\ChewingServer.exe</li>
-						</ol>
-						<p>Q8；為什麼新酷音的選字表有些會出現框框&nbsp;(空白字)&nbsp;，而沒有顯示該字呢？</p>
-						<p>A：出現框框即是目前您的系統字體不足，無法顯示該字，請自行下載補丁修正 (目前微軟已經取消提供字型下載，改為和最新版本 MS Office 搭售)。</p>
-						<p>Q9：我可以自己編輯詞庫嗎？</p>
-						<p>A：可以的，如果是要編輯靜態詞庫&nbsp;(內建詞庫)&nbsp;，請參照&nbsp;pcman&nbsp;寫的 <a href="http://chewing.csie.net/chewing_dict_edit.html">
-								詞庫編輯教學</a> ；如果是要編輯動態詞庫&nbsp;(使用者詞庫)&nbsp;，請參照說明手冊。</p>
-						<p>Q10：編輯靜態詞庫好麻煩喔，有沒有已經打包好的程式可以下載？</p>
-						<p>A：有的，請到新酷音在&nbsp;<a href="http://of.openfoundry.org/">openfoundry</a> &nbsp;成立的子計畫&nbsp;<a href="http://of.openfoundry.org/projects/436/">libchewing-data</a>
-							，在<a href="http://of.openfoundry.org/projects/436/download"> 下載區</a>
-							可以找到目前釋出的詞庫&nbsp;(libchewingdata-xxx.exe，其中xxx為版本號)，安裝方法如Q4。</p>
-						<p>Q11：為什麼要成立&nbsp;libchewing-data&nbsp;子計畫？</p>
-						<p>A：考慮到程式編寫人員一方面要寫程式，一方面又要管理詞庫，負荷較大，如果成立子計畫，專門負責詞庫的管理，一方面可以讓程式編寫人員負擔減輕，另一方面又可以讓更多不會程式但是想加入的朋友加入&nbsp; 
-							(換句話說，負責詞庫不一定要有程式基礎，人人都可以參與)。</p>
-						<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp; 
-							Changlog&nbsp;是這樣寫的阿....為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
-						<p>A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\&nbsp; 
-							裡面的&nbsp;ch_index.dat,&nbsp;dict.dat,&nbsp;fonetree.dat,&nbsp;ph_index.dat,&nbsp;us_freq.dat)&nbsp; 
-							和動態詞庫&nbsp;(使用者詞庫，檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and 
-							Settings\使用者\ApplicationData\Chewing\)&nbsp; 
-							兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去...)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br>
-							當然，如果在內建詞庫裡面有的詞，ex：如「螫舌」未從內建詞庫中刪除，縱使從&nbsp;uhash.dat&nbsp;中刪除了「螫舌」一詞，但是因為內建詞庫中還是可以找到，所以還會出現，解決方法就是從內建詞庫中刪除&nbsp; 
-							(參照&nbsp;pcman&nbsp;寫的<a href="chewing_dict_edit.html">詞庫編輯教學</a>)&nbsp;。</p>
-						<p>Q13：動態詞庫&nbsp;(使用者詞庫)&nbsp;裡面有好多單字，那並不是詞阿，刪掉了也會重複出現，請問那是甚麼？</p>
-						<p>A：因為程式把單字也算成詞，所以會出現很多不是詞的單字，那並不會影響使用者。</p>
-						<p><a name="unixlike">Unix-like 平台常見問題：</a></p>
-						<p>歡迎提供</p>
-						
-						<p><a name="bugreport">問題回報與建議：</a></p>
-						<p>Q1：我發現有臭蟲&nbsp;(無論是程式本身或是詞庫)，或是我有好的主意想建議，我應該到哪邊回報？</p>
-						<p>A： NOTE: 目前程式和詞庫由不同的團隊分開維護，在程式錯誤回報的網頁回報詞庫錯誤，或是在詞庫維護的網頁回報程式問題，將會被直接刪除而不會受理。<br>
-							有關程式方面的臭蟲或是建議, 請到&nbsp; <a href="http://code.google.com/p/chewing/issues/list">
-								http://code.google.com/p/chewing/issues/list</a>&nbsp; 回報<br>
-							有關詞庫方面的臭蟲或是建議, 請到&nbsp; <a href="http://of.openfoundry.org/projects/436/rt">
-								http://of.openfoundry.org/projects/436/rt</a>&nbsp; 回報<br>
-							這個計畫沒有任何商業公司的支持，全靠熱心的網友撰寫程式或是維護，所以如果回應較慢的情形，請見諒。</p>
-						*為了能讓開發／維護人員能快速找出問題所在，請您按下列表格填寫您所遇到的問題：<br>
-						新酷音主程式版本：<br>
-						新酷音詞庫版本：<br>
-						發生問題的程式(包括該程式版本)：<br>
-						臭蟲描述(操作步驟越詳細越好)：<br>
-						臭蟲可以重複嗎：<br>
-						臭蟲螢幕截圖：<br>
-						作業系統資訊：<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;作業系統(包括版本)：<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;office套裝軟體(包括版本)：<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;瀏覽器(包括版本)：<br>
-						新酷音選項設定：如果您有變更過預設的選項, 請填寫<br>
-						附件(使用者詞庫(uhash.dat), 程式碼, 自編詞庫, ....)： 如果您方便的話, 請盡量附上
-						<P></P>
-						<p>Q2：我想參與計畫，請問我該跟誰聯絡？</p>
-						<p>A：如果是有關程式發展方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： 
-							pcman.tw (a) gmail.com)*&nbsp;<br>
-							或是&nbsp; <a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr 
-							(a) gmail.com)&nbsp; 聯絡。<br>
-							如果是有關詞庫方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： 
-							pcman.tw (a) gmail.com)*&nbsp; 、&nbsp;<br>
-							<a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr (a) 
-							gmail.com)&nbsp;<br>
-							或是&nbsp;sky008888&nbsp;(Email： sky008888 (a) gmail.com)&nbsp; 聯絡。<br>
-							*目前&nbsp;pcman&nbsp;因為時間因素，已經很少參與程式的開發。<br>
-						<p>Q3：如果我的問題很緊急，想馬上找到解答，請問有哪邊可以諮詢？</p>
-						<p>A：嗯，如果是有時迫性的問題(限使用上的問題，如果是有關程式臭蟲的問題，可能無法立刻獲得解答)，可以到&nbsp;<a href="telnet://ptt.cc">ptt.cc</a>
-							&nbsp;的&nbsp;EZSoft&nbsp;版發問，或是到&nbsp;irc&nbsp;頻道*&nbsp;(irc://irc.freenode.net/im-dev)&nbsp;，相信很快就可以得到解答。<br>
-							*如果您不會使用&nbsp;irc&nbsp;軟體，請參考 <a href="http://www.bamboo.hc.edu.tw/~daniel/icos2006/20060901/A-04-IRC-02.html">
-								用&nbsp;Gaim&nbsp;玩&nbsp;IRC&nbsp;</a> 一文。<br>
-							**Gaim的下載位址&nbsp;<a href="http://gaim.sourceforge.net/">http://gaim.sourceforge.net/</a>&nbsp;， 
-							&nbsp;<a href="http://zh.wikipedia.org/wiki/Gaim">Gaim&nbsp;的介紹</a>， &nbsp;<a href="http://www.bamboo.hc.edu.tw/~daniel/icos2006/class/junghui/gaim-1.html">Gaim&nbsp;的教學</a>
-						</p>
-						<p><FONT face="新細明體"></FONT>&nbsp;</p>
-					</div> <!-- END about -->
-					Copyright (c) 2004, 2005, 2006, 2007, 2008 by Chewing core team team.
-				</td>
-			</tr>
-		</table>
-	</body>
-</html>
+---
+layout: default
+title: FAQ 問答
+---
+<article>
+	<header>
+		<h3>新酷音輸入法常見問題QA</h3>
+		<ul>
+			<li><a href="#project">專案介紹</a></li>
+			<li><a href="#win32">Win32平台常見問題</a></li>
+			<li><a href="#unixlike">Unix-like平台常見問題</a></li>
+			<li><a href="#bugreport">問題回報與建議</a></li>
+		</ul>
+	</header>
+	<section>
+		<h4 id="project">專案介紹</h4>
+
+		<p>Q1：新酷音輸入法是什麼？</p>
+		<p>
+			A：最早的酷音輸入法是龔律全與陳康本兩人的資訊專題（分別在兩人就讀台大資工系與台大電機系的時期），由中央研究院資訊研究所的徐讚昇博士提供技術指導與超過兩年的經濟及設備支援，最終的成果選擇以GPL授權釋出，可說是 XIM (X Input Method) 中最接近新注音或是自然輸入法的實作。<br />
+			但是酷音輸入法的兩位原創者已不再維護，後續的發展由許多熱心的朋友移植到不同的平台上，諸如 TimHsu (crazykid) 與 jserv 維護的 JMCCE 1.4.x 中文終端機內建酷音輸入法、clkao 移植酷音到 MacOS X 與 IIIMF 架構，以及 gugod 接手 clkao 的 ChewingOSX 後，大幅改善實作的 SpaceChewing 計畫等。而新酷音就是扮演整合這些分支的角色，並且更廣泛移植與改良酷音輸入法的適用性，並且於 2004 年 12 月有獨立的專案資源，到目前為止，已有許多熱心的貢獻者加入開發行列，期待更多的朋友參與。
+		</p>
+		<p>Q2：新酷音有在哪幾種平台上運行？</p>
+		<p>A：目前新酷音可以在&nbsp;MS-Windows、Linux、 FreeBSD、Solaris，以及 Mac OS X&nbsp;上運行。</p>
+		<p>Q3：我在哪邊可以下載到新酷音程式？</p>
+		<p>A：在 <a href="http://chewing.csie.net/">新酷音主站</a>&nbsp;的&nbsp;<a href="http://chewing.csie.net/download/">download</a>&nbsp;這邊可以找到各式版本。</p>
+	</section>
+	<section>
+                <h4 id="win32">Win32 平台常見問題</h4>
+
+		<p>Q1：我已經下載了新版的新酷音程式，我要如何安裝？</p>
+		<p>A：只要執行該程式，安裝精靈會自動完成所有步驟，使用者要做的事就是按 下一步 下一步.....。</p>
+
+		<p>Q2：安裝過程中，發生了&nbsp;chewing.ime&nbsp;無法寫入的問題，請問要如何解決？</p>
+		<p>
+			A：chewing.ime&nbsp;無法寫入是因為被系統鎖住，可以先中斷安裝程序，請依照下列步驟：</p>
+		<p>For windows2000/xp：
+			<ol>
+				<li>請由&nbsp;開始-&gt;控制台-&gt;地區及語言選項-&gt;語言-&gt;詳細資料，在預設輸入語言的選項，將預設輸入語言由新酷音改為其他輸入法；若原本的設定非新酷音輸入法，可略過。</li>
+				<li>重新開機或是重新登入系統。</li>
+				<li>再次執行安裝程式。</li>
+			</ol>
+		</p>
+
+		<p>Q3：我是&nbsp;windows9x/ME&nbsp;的使用者，安裝新酷音輸入法後無法輸入文字，請問這該如何解決？</p>
+		<p>A：win32 新酷音0.3.4.2版已解決此問題，請安裝新版</p>
+
+		<p>Q4：系統出現 buffer overrun (緩衝區溢位) 警告訊息，請問我該怎麼辦？</p>
+		<p>A：系統發生 buffer overrun 的問題，有可能是使用者詞庫 (損壞所引起，請把使用者詞庫刪除或是刪去其中損壞的字串，應可解決。如果刪除使用者詞庫 (檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and Settings\使用者帳號\ApplicationData\Chewing\) 後還是發生此問題，請來信告知 (聯絡 E-Mail 請見 <a href="#bugreport">問題回報與建議</a>Q2)。</p>
+
+		<p>Q5：新酷音輸入法有使用手冊嗎？</p>
+		<p>A：有。使用手冊：開始-&gt;程式集-&gt;新酷音輸入法-&gt;新酷音輸入法使用說明，或是可以在 輸入法工具列最右邊的按鈕中找到。</p>
+
+		<p>Q6：本地詞庫編輯工具那是什麼？如何使用？</p>
+		<p>A：本地詞庫編輯工具可以讓使用者編輯動態詞庫&nbsp;(相對於靜態詞庫、內建詞庫)&nbsp;，詳細的使用方法請見說明手冊。</p>
+
+		<p>Q7：我裝好新酷音了，可是第一次啟動新酷音的時候會有些時間上的延遲，請問這是怎麼回事？</p>
+		<p>A：第一次載入新酷音的時候，因為程式為載入詞庫，所以啟動會比較慢。您可以修改登錄檔&nbsp;(registry)&nbsp;，讓系統開機自動執行 chewingserver.exe&nbsp;，以下是修改方法：
+		<p>For windows2000/xp：
+			<ol>
+				<li>請由&nbsp;開始-&gt;執行</li>
+				<li>輸入 regedit 開啟登錄檔編輯器</li>
+				<li>進去找到 HKEY_CURRENT_USER\Software\Microsoft\Windows\Current Version\Run</li>
+				<li>然後在右側視窗按下右鍵新增字串</li>
+				<li>名稱隨便取(建議取個好記的名稱)</li>
+				<li>字串的內容是 c:\windows\system32\IME\Chewing\ChewingServer.exe (windows2000 的路徑是</li>
+				<li>c:\winNT\system32\IME\Chewing\ChewingServer.exe</li>
+			</ol>
+		</p>
+
+		<p>Q8；為什麼新酷音的選字表有些會出現框框&nbsp;(空白字)&nbsp;，而沒有顯示該字呢？</p>
+		<p>A：出現框框即是目前您的系統字體不足，無法顯示該字，請自行下載補丁修正 (目前微軟已經取消提供字型下載，改為和最新版本 MS Office 搭售)。</p>
+
+		<p>Q9：我可以自己編輯詞庫嗎？</p>
+		<p>A：可以的，如果是要編輯靜態詞庫&nbsp;(內建詞庫)&nbsp;，請參照&nbsp;pcman&nbsp;寫的 <a href="http://chewing.csie.net/chewing_dict_edit.html">	詞庫編輯教學</a> ；如果是要編輯動態詞庫&nbsp;(使用者詞庫)&nbsp;，請參照說明手冊。</p>
+
+		<p>Q10：編輯靜態詞庫好麻煩喔，有沒有已經打包好的程式可以下載？</p>
+		<p>A：有的，請到新酷音在&nbsp;<a href="http://of.openfoundry.org/">openfoundry</a> &nbsp;成立的子計畫&nbsp;<a href="http://of.openfoundry.org/projects/436/">libchewing-data</a>，在<a href="http://of.openfoundry.org/projects/436/download"> 下載區</a>可以找到目前釋出的詞庫&nbsp;(libchewingdata-xxx.exe，其中xxx為版本號)，安裝方法如Q4。</p>
+
+		<p>Q11：為什麼要成立&nbsp;libchewing-data&nbsp;子計畫？</p>
+		<p>A：考慮到程式編寫人員一方面要寫程式，一方面又要管理詞庫，負荷較大，如果成立子計畫，專門負責詞庫的管理，一方面可以讓程式編寫人員負擔減輕，另一方面又可以讓更多不會程式但是想加入的朋友加入&nbsp;(換句話說，負責詞庫不一定要有程式基礎，人人都可以參與)。</p>
+
+		<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp;Changlog&nbsp;是這樣寫的阿....為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
+
+		<p>
+			A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\&nbsp;裡面的&nbsp;ch_index.dat,&nbsp;dict.dat,&nbsp;fonetree.dat,&nbsp;ph_index.dat,&nbsp;us_freq.dat)&nbsp;和動態詞庫&nbsp;(使用者詞庫，檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and Settings\使用者\ApplicationData\Chewing\)&nbsp;兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去$hellip;)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br />
+			當然，如果在內建詞庫裡面有的詞，ex：如「螫舌」未從內建詞庫中刪除，縱使從&nbsp;uhash.dat&nbsp;中刪除了「螫舌」一詞，但是因為內建詞庫中還是可以找到，所以還會出現，解決方法就是從內建詞庫中刪除&nbsp;(參照&nbsp;pcman&nbsp;寫的<a href="chewing_dict_edit.html">詞庫編輯教學</a>)&nbsp;。</p>
+
+		<p>Q13：動態詞庫&nbsp;(使用者詞庫)&nbsp;裡面有好多單字，那並不是詞阿，刪掉了也會重複出現，請問那是甚麼？</p>
+		<p>A：因為程式把單字也算成詞，所以會出現很多不是詞的單字，那並不會影響使用者。</p>
+        </section>
+	<section>
+                <h4 id="unixlike">Unix-like 平台常見問題</h4>
+        </section>
+	<section>
+                <h4 id="bugreport">問題回報與建議</a></h4>
+
+		<p>Q1：我發現有臭蟲&nbsp;(無論是程式本身或是詞庫)，或是我有好的主意想建議，我應該到哪邊回報？</p>
+		<p>
+			A： NOTE: 目前程式和詞庫由不同的團隊分開維護，在程式錯誤回報的網頁回報詞庫錯誤，或是在詞庫維護的網頁回報程式問題，將會被直接刪除而不會受理。<br />
+			有關程式方面的臭蟲或是建議, 請到&nbsp; <a href="http://code.google.com/p/chewing/issues/list">http://code.google.com/p/chewing/issues/list</a>&nbsp; 回報。<br />
+			有關詞庫方面的臭蟲或是建議, 請到&nbsp; <a href="http://of.openfoundry.org/projects/436/rt">http://of.openfoundry.org/projects/436/rt</a>&nbsp; 回報。<br />
+			這個計畫沒有任何商業公司的支持，全靠熱心的網友撰寫程式或是維護，所以如果回應較慢的情形，請見諒。
+		</p>
+		<p>
+			為了能讓開發／維護人員能快速找出問題所在，請您按下列表格填寫您所遇到的問題：
+			<ul>
+				<li>新酷音主程式版本：</li>
+				<li>新酷音詞庫版本：</li>
+				<li>發生問題的程式(包括該程式版本)：</li>
+				<li>臭蟲描述(操作步驟越詳細越好)：</li>
+				<li>臭蟲可以重複嗎：</li>
+				<li>臭蟲螢幕截圖：</li>
+				<li>
+					作業系統資訊：
+					<ul>
+						<li>作業系統(包括版本)：</li>
+						<li>office套裝軟體(包括版本)：</li>
+						<li>瀏覽器(包括版本)：</li>
+					</ul>
+				</li>
+				<li>新酷音選項設定：如果您有變更過預設的選項, 請填寫</li>
+				<li>附件(使用者詞庫(uhash.dat), 程式碼, 自編詞庫, ....)，如果您方便的話, 請盡量附上</li>
+			</ul>
+		</p>
+
+		<p>Q2：我想參與計畫，請問我該跟誰聯絡？</p>
+		<p>
+			A：如果是有關程式發展方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： pcman.tw (a) gmail.com)*&nbsp;<br />
+			或是&nbsp; <a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr (a) gmail.com)&nbsp; 聯絡。<br />
+			如果是有關詞庫方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： pcman.tw (a) gmail.com)*&nbsp; 、&nbsp;<br />
+			<a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr (a) gmail.com)&nbsp;<br />
+			或是&nbsp;sky008888&nbsp;(Email： sky008888 (a) gmail.com)&nbsp; 聯絡。<br />
+			*目前&nbsp;pcman&nbsp;因為時間因素，已經很少參與程式的開發。
+		</p>
+
+		<p>Q3：如果我的問題很緊急，想馬上找到解答，請問有哪邊可以諮詢？</p>
+		<p>
+			A：嗯，如果是有時迫性的問題(限使用上的問題，如果是有關程式臭蟲的問題，可能無法立刻獲得解答)，可以到&nbsp;<a href="telnet://ptt.cc">ptt.cc</a>&nbsp;的&nbsp;EZSoft&nbsp;版發問，或是到&nbsp;irc&nbsp;頻道*&nbsp;(irc://irc.freenode.net/im-dev)&nbsp;，相信很快就可以得到解答。
+		</p>
+        </section>
+</article>

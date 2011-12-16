@@ -2,6 +2,16 @@
 layout: default
 title: Chewing - Headquarter of Intelligent Chinese Phonetic Input Method Development
 ---
+{% if site.posts %}
+<article>
+	<header>
+		<h3>Last News / 最新消息</h3>
+		<h4>{{ site.posts.first.title }}</h4>
+		<time>{{ site.posts.first.date | date_to_string }}</time>
+	</header>
+	{{ site.posts.first.content }}
+</article>
+{% endif %}
 <article>
 	<header>
 		<h3>Note / 注意</h3>

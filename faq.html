@@ -34,13 +34,12 @@ title: FAQ 問答
 		<p>Q2：安裝過程中，發生了&nbsp;chewing.ime&nbsp;無法寫入的問題，請問要如何解決？</p>
 		<p>
 			A：chewing.ime&nbsp;無法寫入是因為被系統鎖住，可以先中斷安裝程序，請依照下列步驟：</p>
-		<p>For windows2000/xp：
-			<ol>
-				<li>請由&nbsp;開始-&gt;控制台-&gt;地區及語言選項-&gt;語言-&gt;詳細資料，在預設輸入語言的選項，將預設輸入語言由新酷音改為其他輸入法；若原本的設定非新酷音輸入法，可略過。</li>
-				<li>重新開機或是重新登入系統。</li>
-				<li>再次執行安裝程式。</li>
-			</ol>
-		</p>
+		<p>For windows2000/xp：</p>
+		<ol>
+			<li>請由&nbsp;開始-&gt;控制台-&gt;地區及語言選項-&gt;語言-&gt;詳細資料，在預設輸入語言的選項，將預設輸入語言由新酷音改為其他輸入法；若原本的設定非新酷音輸入法，可略過。</li>
+			<li>重新開機或是重新登入系統。</li>
+			<li>再次執行安裝程式。</li>
+		</ol>
 
 		<p>Q3：我是&nbsp;windows9x/ME&nbsp;的使用者，安裝新酷音輸入法後無法輸入文字，請問這該如何解決？</p>
 		<p>A：win32 新酷音0.3.4.2版已解決此問題，請安裝新版</p>
@@ -56,17 +55,16 @@ title: FAQ 問答
 
 		<p>Q7：我裝好新酷音了，可是第一次啟動新酷音的時候會有些時間上的延遲，請問這是怎麼回事？</p>
 		<p>A：第一次載入新酷音的時候，因為程式為載入詞庫，所以啟動會比較慢。您可以修改登錄檔&nbsp;(registry)&nbsp;，讓系統開機自動執行 chewingserver.exe&nbsp;，以下是修改方法：
-		<p>For windows2000/xp：
-			<ol>
-				<li>請由&nbsp;開始-&gt;執行</li>
-				<li>輸入 regedit 開啟登錄檔編輯器</li>
-				<li>進去找到 HKEY_CURRENT_USER\Software\Microsoft\Windows\Current Version\Run</li>
-				<li>然後在右側視窗按下右鍵新增字串</li>
-				<li>名稱隨便取(建議取個好記的名稱)</li>
-				<li>字串的內容是 c:\windows\system32\IME\Chewing\ChewingServer.exe (windows2000 的路徑是</li>
-				<li>c:\winNT\system32\IME\Chewing\ChewingServer.exe</li>
-			</ol>
-		</p>
+		<p>For windows2000/xp：</p>
+		<ol>
+			<li>請由&nbsp;開始-&gt;執行</li>
+			<li>輸入 regedit 開啟登錄檔編輯器</li>
+			<li>進去找到 HKEY_CURRENT_USER\Software\Microsoft\Windows\Current Version\Run</li>
+			<li>然後在右側視窗按下右鍵新增字串</li>
+			<li>名稱隨便取(建議取個好記的名稱)</li>
+			<li>字串的內容是 c:\windows\system32\IME\Chewing\ChewingServer.exe (windows2000 的路徑是</li>
+			<li>c:\winNT\system32\IME\Chewing\ChewingServer.exe</li>
+		</ol>
 
 		<p>Q8；為什麼新酷音的選字表有些會出現框框&nbsp;(空白字)&nbsp;，而沒有顯示該字呢？</p>
 		<p>A：出現框框即是目前您的系統字體不足，無法顯示該字，請自行下載補丁修正 (目前微軟已經取消提供字型下載，改為和最新版本 MS Office 搭售)。</p>
@@ -96,7 +94,7 @@ title: FAQ 問答
 		<p>A；現今的主流發行版大多採用IBus輸入法框架，如果有收錄進套件庫的話，請安裝 ibus-chewing即可。</p>
         </section>
 	<section>
-                <h4 id="bugreport">問題回報與建議</a></h4>
+                <h4 id="bugreport">問題回報與建議</h4>
 
 		<p>Q1：我發現有臭蟲&nbsp;(無論是程式本身或是詞庫)，或是我有好的主意想建議，我應該到哪邊回報？</p>
 		<p>

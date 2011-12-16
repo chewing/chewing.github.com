@@ -16,5 +16,5 @@ What's New in libchewing 0.3.3
 * Fix cross compilation.
 * Improved shell script to merge changes form libchewing-data.
 * Successful stories:
-    - Google ChromeOS provides built-in Chewing IM support
-    - MeeGo platform provides built-in Chewing IM support
+	- Google ChromeOS provides built-in Chewing IM support
+	- MeeGo platform provides built-in Chewing IM support

@@ -6,7 +6,7 @@ title: News 更新
 	<header>
 		<h3>News 更新消息</h3>
 	</header>
-	{% if site.posts %}
+	{% if site.posts != empty %}
 	<ul id="news">
 	{% for post in site.posts %}
 		<li>

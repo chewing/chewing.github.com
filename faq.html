@@ -29,7 +29,7 @@ title: FAQ 問答
                 <h4 id="win32">Win32 平台常見問題</h4>
 
 		<p>Q1：我已經下載了新版的新酷音程式，我要如何安裝？</p>
-		<p>A：只要執行該程式，安裝精靈會自動完成所有步驟，使用者要做的事就是按 下一步 下一步.....。</p>
+		<p>A：只要執行該程式，安裝精靈會自動完成所有步驟，使用者要做的事就是按 下一步 下一步&hellip;。</p>
 
 		<p>Q2：安裝過程中，發生了&nbsp;chewing.ime&nbsp;無法寫入的問題，請問要如何解決？</p>
 		<p>
@@ -72,7 +72,7 @@ title: FAQ 問答
 		<p>A：出現框框即是目前您的系統字體不足，無法顯示該字，請自行下載補丁修正 (目前微軟已經取消提供字型下載，改為和最新版本 MS Office 搭售)。</p>
 
 		<p>Q9：我可以自己編輯詞庫嗎？</p>
-		<p>A：可以的，如果是要編輯靜態詞庫&nbsp;(內建詞庫)&nbsp;，請參照&nbsp;pcman&nbsp;寫的 <a href="http://chewing.csie.net/chewing_dict_edit.html">	詞庫編輯教學</a> ；如果是要編輯動態詞庫&nbsp;(使用者詞庫)&nbsp;，請參照說明手冊。</p>
+		<p>A：可以的，如果是要編輯靜態詞庫&nbsp;(內建詞庫)&nbsp;，請參照&nbsp;pcman&nbsp;寫的 <a href="chewing_dict_edit.html">	詞庫編輯教學</a> ；如果是要編輯動態詞庫&nbsp;(使用者詞庫)&nbsp;，請參照說明手冊。</p>
 
 		<p>Q10：編輯靜態詞庫好麻煩喔，有沒有已經打包好的程式可以下載？</p>
 		<p>A：有的，請到新酷音在&nbsp;<a href="http://of.openfoundry.org/">openfoundry</a> &nbsp;成立的子計畫&nbsp;<a href="http://of.openfoundry.org/projects/436/">libchewing-data</a>，在<a href="http://of.openfoundry.org/projects/436/download"> 下載區</a>可以找到目前釋出的詞庫&nbsp;(libchewingdata-xxx.exe，其中xxx為版本號)，安裝方法如Q4。</p>
@@ -80,10 +80,10 @@ title: FAQ 問答
 		<p>Q11：為什麼要成立&nbsp;libchewing-data&nbsp;子計畫？</p>
 		<p>A：考慮到程式編寫人員一方面要寫程式，一方面又要管理詞庫，負荷較大，如果成立子計畫，專門負責詞庫的管理，一方面可以讓程式編寫人員負擔減輕，另一方面又可以讓更多不會程式但是想加入的朋友加入&nbsp;(換句話說，負責詞庫不一定要有程式基礎，人人都可以參與)。</p>
 
-		<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp;Changlog&nbsp;是這樣寫的阿....為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
+		<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp;Changlog&nbsp;是這樣寫的阿&hellip;為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
 
 		<p>
-			A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\&nbsp;裡面的&nbsp;ch_index.dat,&nbsp;dict.dat,&nbsp;fonetree.dat,&nbsp;ph_index.dat,&nbsp;us_freq.dat)&nbsp;和動態詞庫&nbsp;(使用者詞庫，檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and Settings\使用者\ApplicationData\Chewing\)&nbsp;兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去$hellip;)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br />
+			A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\&nbsp;裡面的&nbsp;ch_index.dat,&nbsp;dict.dat,&nbsp;fonetree.dat,&nbsp;ph_index.dat,&nbsp;us_freq.dat)&nbsp;和動態詞庫&nbsp;(使用者詞庫，檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and Settings\使用者\ApplicationData\Chewing\)&nbsp;兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去&hellip;)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br />
 			當然，如果在內建詞庫裡面有的詞，ex：如「螫舌」未從內建詞庫中刪除，縱使從&nbsp;uhash.dat&nbsp;中刪除了「螫舌」一詞，但是因為內建詞庫中還是可以找到，所以還會出現，解決方法就是從內建詞庫中刪除&nbsp;(參照&nbsp;pcman&nbsp;寫的<a href="chewing_dict_edit.html">詞庫編輯教學</a>)&nbsp;。</p>
 
 		<p>Q13：動態詞庫&nbsp;(使用者詞庫)&nbsp;裡面有好多單字，那並不是詞阿，刪掉了也會重複出現，請問那是甚麼？</p>
@@ -91,6 +91,9 @@ title: FAQ 問答
         </section>
 	<section>
                 <h4 id="unixlike">Unix-like 平台常見問題</h4>
+
+		<p>Q1；請問在Linux桌面系統上要如何使用新酷音？</p>
+		<p>A；現今的主流發行版大多採用IBus輸入法框架，如果有收錄進套件庫的話，請安裝 ibus-chewing即可。</p>
         </section>
 	<section>
                 <h4 id="bugreport">問題回報與建議</a></h4>
@@ -120,7 +123,7 @@ title: FAQ 問答
 					</ul>
 				</li>
 				<li>新酷音選項設定：如果您有變更過預設的選項, 請填寫</li>
-				<li>附件(使用者詞庫(uhash.dat), 程式碼, 自編詞庫, ....)，如果您方便的話, 請盡量附上</li>
+				<li>附件(使用者詞庫(uhash.dat), 程式碼, 自編詞庫, &hellip;)，如果您方便的話, 請盡量附上</li>
 			</ul>
 		</p>
 
@@ -128,15 +131,14 @@ title: FAQ 問答
 		<p>
 			A：如果是有關程式發展方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： pcman.tw (a) gmail.com)*&nbsp;<br />
 			或是&nbsp; <a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr (a) gmail.com)&nbsp; 聯絡。<br />
-			如果是有關詞庫方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： pcman.tw (a) gmail.com)*&nbsp; 、&nbsp;<br />
-			<a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr (a) gmail.com)&nbsp;<br />
+			如果是有關詞庫方面的，可以和&nbsp; <a href="http://pcman.sayya.org/">pcman</a>&nbsp;(Email： pcman.tw (a) gmail.com)*&nbsp;、&nbsp;<a href="http://www.seamxr.com/blog">seamxr</a>&nbsp;(Email： seamxr (a) gmail.com)&nbsp;<br />
 			或是&nbsp;sky008888&nbsp;(Email： sky008888 (a) gmail.com)&nbsp; 聯絡。<br />
 			*目前&nbsp;pcman&nbsp;因為時間因素，已經很少參與程式的開發。
 		</p>
 
 		<p>Q3：如果我的問題很緊急，想馬上找到解答，請問有哪邊可以諮詢？</p>
 		<p>
-			A：嗯，如果是有時迫性的問題(限使用上的問題，如果是有關程式臭蟲的問題，可能無法立刻獲得解答)，可以到&nbsp;<a href="telnet://ptt.cc">ptt.cc</a>&nbsp;的&nbsp;EZSoft&nbsp;版發問，或是到&nbsp;irc&nbsp;頻道*&nbsp;(irc://irc.freenode.net/im-dev)&nbsp;，相信很快就可以得到解答。
+			A：嗯，如果是有時迫性的問題(限使用上的問題，如果是有關程式臭蟲的問題，可能無法立刻獲得解答)，可以到&nbsp;<a href="telnet://ptt.cc">ptt.cc</a>&nbsp;的&nbsp;EZSoft&nbsp;版發問，或是到&nbsp;irc&nbsp;頻道&nbsp;(irc://irc.freenode.net/im-dev)&nbsp;，相信很快就可以得到解答。
 		</p>
         </section>
 </article>

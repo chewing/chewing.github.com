@@ -1,0 +1,14 @@
+---
+layout: post
+title: Win32-chewing 0.0.7 版釋出
+---
+Win32-chewing 0.0.7 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.0.7
+----------------------------------------------------------
+* Fix the crashes when Win32-chewing is used as default IME.
+* Delay the loading of data to reduce program loading time.
+* Do large scale source code refactoring,to greatly enhance stability.
+* Temporarily disable the button used to switch between English and Chinese since it cause some problems.
+* Fix the wrong display of status bar icon.
+* Some minor bug fix.

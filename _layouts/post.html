@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article>
+	<header>
+		<h3>{{ page.title }}</h3>
+		<time>{{ page.date | date_to_long_string }}</time>
+	</header>
+	<div id="post">
+		{{ content }}
+	</div>
+</article>

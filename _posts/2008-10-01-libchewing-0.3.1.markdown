@@ -7,7 +7,7 @@ libchewing 0.3.1 版釋出，這是新的發展系列，可下載使用，並請
 What's New in libchewing 0.3.1
 ----------------------------------------------------------
 * New keyboard layout DACHEN\_CP26.
-* Add key '`' to open symbol table.
+* Add key '\`' to open symbol table.
 * Erase candidate and reset its length when 'Esc' key is handled.
 * Closes candidate window when user pressed 'Up' key.
 * Doing select at the end of edit buffer works on the

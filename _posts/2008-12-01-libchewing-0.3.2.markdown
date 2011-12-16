@@ -21,6 +21,6 @@ What's New in libchewing 0.3.2
 * Merged with libchewing-data project. (r342)
 * Canonical debugging messages.
 * Successful stories:
-	- OpenBSD porting
-	- ibus-chewing : chewing engine for ibus input method framework.
-	- UIM-chewing leveraging libchewing 0.3.x development branch.
+    * OpenBSD porting
+    * ibus-chewing : chewing engine for ibus input method framework.
+    * UIM-chewing leveraging libchewing 0.3.x development branch.

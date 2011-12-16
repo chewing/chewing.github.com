@@ -1,0 +1,11 @@
+---
+layout: post
+title: Win32-chewing 0.3.4.7 版釋出
+---
+Win32-chewing 0.3.4.7 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.4.7
+----------------------------------------------------------
+* Fix logonui.exe bug.
+* Fix moe dictionary url.
+* NOTE : please uninstall previous version before installing 0.3.4.7.

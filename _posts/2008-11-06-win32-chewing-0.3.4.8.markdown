@@ -1,0 +1,10 @@
+---
+layout: post
+title: Win32-chewing 0.3.4.8 版釋出
+---
+Win32-chewing 0.3.4.8 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.4.8
+----------------------------------------------------------
+* Fix winlogon.exe bug.
+* NOTE : please uninstall previous version before installing 0.3.4.8.

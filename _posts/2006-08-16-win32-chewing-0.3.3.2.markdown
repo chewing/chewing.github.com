@@ -1,0 +1,11 @@
+---
+layout: post
+title: Win32-chewing 0.3.3.2 版釋出
+---
+Win32-chewing 0.3.3.2 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.3.2
+----------------------------------------------------------
+1. Easy symbol input (shift+[a-z]) with it's setup UI.
+2. Input multiple word/symbol by press shift+[a-z].
+3. Fix fail typing problem under non-admin account.

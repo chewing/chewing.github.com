@@ -1,0 +1,13 @@
+---
+layout: post
+title: Win32-chewing 0.3.4.2 版釋出
+---
+Win32-chewing 0.3.4.2 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.4.2
+----------------------------------------------------------
+* Align HanYuPinYing to ISO standard.
+* Fix some problems could cause crash.
+* Fix a problem about string won't auto commit.
+* Ensure Win98 and WinME compatible.
+* Fix few minor problems.

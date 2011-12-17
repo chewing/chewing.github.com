@@ -1,0 +1,15 @@
+---
+layout: post
+title: Win32-chewing 0.2.7b 釋出
+---
+Win32-chewing 0.2.7b 釋出，請下載取用。
+
+What's New in Win32-chewing 0.2.7b
+----------------------------------------------------------
+* Fix PhraseEdit tool.
+* Fix symbol table.
+* Fix several minor bugs.
+* Add select candidate by keyboard cursor.
+* Add an option about switch FullShape input.
+* Add an option about switch Chi\Eng mode by CapsLock key.
+* Add capability to indicate each phrase.

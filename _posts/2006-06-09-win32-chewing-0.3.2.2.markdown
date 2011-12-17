@@ -1,0 +1,16 @@
+---
+layout: post
+title: Win32-chewing 0.3.2.2 版釋出
+---
+Win32-chewing 0.3.2.2 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.2.2
+----------------------------------------------------------
+1. Use ` key to open symbol table
+2. Brand new customizable symbol table
+3. Cancel opening symbol table with Ctrl + 1
+4. Brand new configuration dialog
+5. Support "interval" provided by libchewing in some programs
+6. Improve the core
+7. Greatly improve the installer and reduce its size
+8. Upgrade the data files

@@ -1,0 +1,27 @@
+---
+layout: post
+title: Win32-chewing 0.2.0 釋出
+---
+Win32-chewing 0.2.0 釋出，請下載取用。
+
+What's New in Win32-chewing 0.2.0
+----------------------------------------------------------
+* Attemp to support multi-monitor. (Not tested)
+* Use new dictionary with new format and many fix.
+* Support vertical composition mode.
+* Display visual notification when user phrases are addad.
+* Add an option to disable shift key
+* Add an option to start IME with fullshape mode.
+* Add an option to choose different SelKeys.
+* Add an option to turn off status window.
+* Add an option to add user phrases from the left side or from the right side of the cursor.
+* New installer doing more check to ensure correct installation.
+* Support typing numbers with numpad in Chinese mode.
+* Enable the users to type the phonetic symbols 'ˇ', 'ˋ', 'ˊ', and '˙'.
+* Fix wrong display of candidate window & composition window.
+* Enhance stability and performance
+* Add tooltips for the buttons in status window.
+* Fix incompatibility with some games.
+* Fix incompatibility with Java programs.
+* Fix the problems which disable the normal usage of shift and ctrl keys.
+* Lots of minor bug fix.

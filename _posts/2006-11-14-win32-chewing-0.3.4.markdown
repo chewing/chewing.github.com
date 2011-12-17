@@ -1,0 +1,15 @@
+---
+layout: post
+title: Win32-chewing 0.3.4 版釋出
+---
+Win32-chewing 0.3.4 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.4
+----------------------------------------------------------
+* Revised HanYuPinYing module to fit ISO standard.
+* Support multiple user accounts to use chewing in the same time.
+* Shorten loading time.
+* Fix bug of false new version notification.
+* Fix few bugs about crash.
+* Fix memory leak.
+* Rename PhraseEd to clarify its purpose.

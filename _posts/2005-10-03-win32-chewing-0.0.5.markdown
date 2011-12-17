@@ -1,0 +1,12 @@
+---
+layout: post
+title: Win32-chewing 0.0.5 版釋出
+---
+Win32-chewing 0.0.5 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.0.5
+----------------------------------------------------------
+* Support Microsft Windows ® 98/ME.
+* Much better compatibility with IE, Word, Firefox, MSN, and other popular applications which have their own customized IME UI.
+* Commit composition string when the user switch to another keyboard layout
+* Much better stability.

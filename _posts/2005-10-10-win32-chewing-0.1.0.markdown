@@ -1,0 +1,17 @@
+---
+layout: post
+title: Win32-chewing 0.1.0 雙十國慶紀念版 釋出
+---
+Win32-chewing 0.1.0 雙十國慶紀念版 釋出，請下載取用。
+
+What's New in Win32-chewing 0.1.0 雙十國慶紀念版
+----------------------------------------------------------
+* New server/client design enabling data sharing between multiple IME instance. Both memory usage and loading speed can be optimized.
+* New data file format greatly reduce loading time.
+* Enable typing numbers directly with numpad.
+* Add an option to turn off selection by space key.
+* Add an option to fix the position of composition window.
+* Display current page number in candidate window.
+* Fix wrong display of candidate window.
+* Add a new logo in about dialog.
+* Lots of minor bug fix.

@@ -1,0 +1,17 @@
+---
+layout: post
+title: Win32-chewing 0.0.9.3 版釋出
+---
+Win32-chewing 0.0.9.3 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.0.9.3
+----------------------------------------------------------
+* Fix wronly displayed multiple status bars.
+* Solve all known Windows ® 98/ME compatibility issues.
+* COOL! Brand new gorgeous status bar witch changeable skin.
+* Do large scale source code refactoring to greatly enhance stability.
+* Add an option to make Chewing start with English mode.
+* Fix all problems with Chinese/English switching.
+* Fix the wrong position and display of status bar icon.
+* Add an about dialog box.
+* Lots of minor bug fix.

@@ -1,0 +1,9 @@
+---
+layout: post
+title: Win32-chewing 0.3.3.1 版釋出
+---
+Win32-chewing 0.3.3.1 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.3.1
+----------------------------------------------------------
+1. Add option of enable/disable ctrl+[a-z] or shift+[a-z] to input symbols!

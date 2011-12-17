@@ -1,0 +1,12 @@
+---
+layout: post
+title: Win32-chewing 0.2.5c 釋出
+---
+Win32-chewing 0.2.5c 釋出，請下載取用。
+
+What's New in Win32-chewing 0.2.5c
+----------------------------------------------------------
+* Fix IME module of 0.2.5b crash when opening candidate window.
+* Unicode supported since 0.2.5b. (for experimental)
+* Add candidate window's font size control.
+* The tool PhraseEd not ready in this version.

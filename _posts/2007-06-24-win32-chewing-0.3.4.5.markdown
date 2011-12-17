@@ -1,0 +1,12 @@
+---
+layout: post
+title: Win32-chewing 0.3.4.5 版釋出
+---
+Win32-chewing 0.3.4.5 版釋出，請下載取用。
+
+What's New in Win32-chewing 0.3.4.5
+----------------------------------------------------------
+* Output Simplified Chinese (Optional)
+* Fix some problems of Romanizations (former Hanyupinyin).
+* Revise symbol tables.
+* NOTE : please uninstall previous version before installing 0.3.4.5.

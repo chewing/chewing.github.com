@@ -11,7 +11,7 @@ nav {
 	position: fixed;
 	background: url("logo.png") no-repeat bottom center;
 	top: 4em;
-	padding: 0 1em 135px 1em;
+	padding: 1em 1em 135px 1em;
 	width: 8em;
 }
 
@@ -35,7 +35,7 @@ nav ul li {
 	margin: 1em 1em 0 10em;
 	padding: 1em;
 	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 1em;
+	border-radius: 0.5em;
 }
 
 #content article p {

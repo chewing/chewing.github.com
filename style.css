@@ -9,17 +9,21 @@ body > header {
 nav {
 	position: fixed;
 	background: url("logo.png") no-repeat top center;
-	padding: 1em;
+	top: 1em;
 	padding-top: 120px;
-	width: 10em;
+	width: 8em;
 }
 
 nav header {
 	text-indent: -999em;
+	height: 0;
 }
 
 nav ul {
 	list-style-type: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 1em;
+	padding: 0.5em 0 0.5em 2em;
 }
 
 nav ul li {
@@ -31,8 +35,20 @@ nav ul li {
 	padding: 1em;
 }
 
-#content article p::first-line {
-	text-indent: 4em;	
+#content article p {
+	text-indent: 22em;	
+}
+
+#news ul {
+	list-style-type: none;
+}
+
+#news ul li {
+	padding: 0.5em 0;
+}
+
+#news ul li time {
+	margin-right: 2em;
 }
 
 footer {

@@ -1,19 +1,30 @@
+body {
+	background-image: url("wood_pattern.png");
+	margin: 0;
+}
+
 body > header {
 	text-align: center;
 }
 
-#main {
-        margin: 0 auto;
+nav {
+	position: fixed;
+	background: url("logo.png") no-repeat bottom center;
+	top: 4em;
+	padding: 1em 1em 135px 1em;
+	width: 8em;
 }
 
-nav {
-	float: left;
-	padding: 1em;
-	width: 10em;
+nav header {
+	text-indent: -999em;
+	height: 0;
 }
 
 nav ul {
 	list-style-type: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 0.5em;
+	padding: 0.5em 0 0.5em 1.5em;
 }
 
 nav ul li {
@@ -21,8 +32,26 @@ nav ul li {
 }
 
 #content {
-	margin-left: 12em;
+	margin: 1em 1em 0 10em;
 	padding: 1em;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 0.5em;
+}
+
+#content article p {
+	text-indent: 2em;	
+}
+
+#news {
+	list-style-type: none;
+}
+
+#news li {
+	padding: 0.5em 0;
+}
+
+#news li time {
+	margin-right: 2em;
 }
 
 footer {

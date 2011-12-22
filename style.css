@@ -1,14 +1,9 @@
 body {
-	background-image: url("wood_patter.png");
+	background: url("logo.png") no-repeat top left, url("wood_pattern.png");
 }
 
 body > header {
-	background: url("logo.png") no-repeat right center;
 	text-align: center;
-}
-
-#main {
-        margin: 0 auto;
 }
 
 nav {

@@ -1,4 +1,9 @@
+body {
+	background-image: url("wood_patter.png");
+}
+
 body > header {
+	background: url("logo.png") no-repeat right center;
 	text-align: center;
 }
 

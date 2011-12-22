@@ -5,13 +5,19 @@ body {
 
 body > header {
 	text-align: center;
+	background: url("dark_wood.png");
+	color: #fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 0 10px #000;
 }
 
 nav {
 	position: fixed;
-	background: url("logo.png") no-repeat top center;
-	top: 0.5em;
-	padding: 120px 1em 0 1em;
+	background: url("logo.png") no-repeat bottom center;
+	top: 100px;
+	padding: 0 1em 120px 1em;
 	width: 8em;
 }
 
@@ -32,8 +38,8 @@ nav ul li {
 }
 
 #content {
-	margin: 0 1em 0 10em;
-	padding-top: 1em;
+	margin: 100px 1em 0 10em;
+	padding: 1em 0.5em 0 0.5em;
 }
 
 #content article p {

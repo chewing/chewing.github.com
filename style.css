@@ -5,12 +5,6 @@ body {
 
 body > header {
 	text-align: center;
-	background: url("dark_wood.png");
-	color: #fff;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	box-shadow: 0 0 15px #000;
 }
 
 nav {
@@ -38,7 +32,7 @@ nav ul li {
 }
 
 #content {
-	margin: 4em 1em 0 10em;
+	margin: 1em 1em 0 10em;
 	padding: 1em;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 1em;

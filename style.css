@@ -88,6 +88,10 @@ h3:after {
    width: 999em;
 }
 
+h3 time {
+	float: right;
+}
+
 footer {
 	padding: 0.5em;
 	text-align: center;

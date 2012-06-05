@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: #026873;
+	background-color: #FCD979;
 	background-image: linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
 	  linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
 	  linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
@@ -68,13 +68,13 @@ nav ul li {
 	padding: 0.5em 0;
 }
 
-#news li time {
+time {
 	margin-right: 2em;
 }
 
 h3 {
 	position: relative;
-	background-color: orange;
+	background-color: #FAD850;
 	margin: 0;
 	padding: .5em;
 }
@@ -82,7 +82,7 @@ h3 {
 h3:after {
    content: '';
    position: absolute;
-   background: orange;
+   background: #FAD850;
    top: 0;
    bottom: 0;
    width: 999em;

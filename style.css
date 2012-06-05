@@ -89,7 +89,7 @@ h3:after {
 }
 
 h3 time {
-	float: right;
+	margin-left: 2em;
 }
 
 footer {

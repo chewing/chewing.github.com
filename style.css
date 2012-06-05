@@ -1,6 +1,24 @@
 body {
-	background-image: url("wood_pattern.png");
 	margin: 0;
+	overflow-x: hidden;
+	background-color: #026873;
+	background-image: linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
+	  linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
+	  linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
+	  linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-image: -moz-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
+	  -moz-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
+	  -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
+	  -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-image: -o-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
+	  -o-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
+	  -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
+	  -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-image: -webkit-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
+	  -webkit-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
+	  -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
+	  -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-size: 26px, 58px, 74px, 106px;
 }
 
 body > header {
@@ -52,6 +70,22 @@ nav ul li {
 
 #news li time {
 	margin-right: 2em;
+}
+
+h3 {
+	position: relative;
+	background-color: orange;
+	margin: 0;
+	padding: .5em;
+}
+
+h3:after {
+   content: '';
+   position: absolute;
+   background: orange;
+   top: 0;
+   bottom: 0;
+   width: 999em;
 }
 
 footer {

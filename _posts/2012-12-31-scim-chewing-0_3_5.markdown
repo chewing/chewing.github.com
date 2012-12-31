@@ -1,0 +1,17 @@
+---
+layout: post
+title: scim-chewing 0.3.5 Released
+---
+scim-chewing 0.3.5 Released: 2012-12-31
+
+hat's New in SCIM-chewing 0.3.5                                                                                            
+---------------------------------------------------------
+* Gtk+ 3.x support
+* Handle translated Chi-Eng mode switch properly
+* Fix incorrect color cand problem
+* Support THL (Taiwan Huayu Luomapinyin) and MPS2 Pinyin keyboard
+
+[Download](http://code.google.com/p/chewing/downloads/list)
+
+SHA-1:
+- 26ced990f0c9e5d43e271cd6e77583de81a008d  scim-chewing-0.3.5.tar.bz2

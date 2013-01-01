@@ -48,4 +48,5 @@ What's New in libchewing 0.3.4
 [Download](http://code.google.com/p/chewing/downloads/list)
 
 SHA-1:
+
 * 631a613df00409b51adebb8b2dc33c5e6a006834  libchewing-0.3.4.tar.bz2

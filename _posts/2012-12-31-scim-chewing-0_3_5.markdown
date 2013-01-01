@@ -14,4 +14,4 @@ What's New in SCIM-chewing 0.3.5
 [Download](http://code.google.com/p/chewing/downloads/list)
 
 SHA-1:
-- 26ced990f0c9e5d43e271cd6e77583de81a008d  scim-chewing-0.3.5.tar.bz2
+* f26ced990f0c9e5d43e271cd6e77583de81a008d  scim-chewing-0.3.5.tar.bz2

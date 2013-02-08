@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title> {{ page.title }} </title>
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap-navbar.css" />
+		<base href="{{ site.url }}">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="static/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navbar navbar-inverse">
+					<div class="navbar-inner">
+						<a class="brand" href="/"> Chewing </a>
+						<ul class="nav">
+							<li class="active"><a href="download.html">Download</a></li>
+							<li><a href="screenshot.html">Screenshot</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="getinvolved">Get involed</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="offset4 span4" style="text-align: center;">
+					<a class="btn btn-large btn-block btn-primary" href="/download.html">Try it now</a>
+				</div>
+			</div>
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

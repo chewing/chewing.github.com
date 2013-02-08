@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title> {{ page.title }} </title>
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-navbar.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/index-navbar.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/index-carousel.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="/static/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navbar navbar-inverse">
+					<div class="navbar-inner">
+						<a class="brand" href="/"> Chewing </a>
+						<ul class="nav">
+							<li><a href="/download.html">Download</a></li>
+							<li><a href="/screenshot.html">Screenshot</a></li>
+							<li><a href="/faq.html">FAQ</a></li>
+							<li><a href="/getinvolved">Get involved</a></li>
+							<li><a href="/about.html">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="banner" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="active item">
+					<img src="http://i.imgur.com/BIBxo5c.png" alt="chewing on openSUSE" />
+					<div class="container">
+						<div class="carousel-caption">
+							<h4>新酷音 @ openSUSE</h4>
+							<p>test</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">bbbbb</div>
+			</div>
+			<a class="carousel-control left" href="#banner" data-slide="next">&lsaquo;</a>
+			<a class="carousel-control right" href="#banner" data-slide="prev">&rsaquo;</a>
+		</div>
+		<div class="container">
+			<div class="row" style="margin-bottom: 40px;">
+				<div class="offset4 span4" style="text-align: center;">
+					<a class="btn btn-large btn-block btn-primary" href="/download.html">Try it now</a>
+				</div>
+			</div>
+			<hr class="featurette-divider" />
+			<div class="row">
+				<div class="span4">
+					<h2 class="featurette-heading">News</h2>
+					<ul>
+					{% for post in site.posts %}
+						<li>
+							<a href="{{ post.url }}">{{ post.title }}</a> -- {{ post.date | date: "%Y/%m/%d" }}
+						</li>
+					{% endfor %}
+					</ul>
+				</div>
+				<div class="span4">
+					<h2 class="featurette-heading">Tarball</h2>
+				</div>
+				<div class="span4">
+					<h2 class="featurette-heading">Links</h2>
+					{% include links.html %}
+				</div>
+			</div>
+			<hr class="featurette-divider" />
+			<footer>
+				<p class="pull-right"><a href="#">^ Back ot top</a></p>
+				<p>Copyright &copy; 2004-{{ site.time | date: "%Y" }} by Chewing Core Team.</p>
+			</footer>
+		</div>
+	</body>
+</html>

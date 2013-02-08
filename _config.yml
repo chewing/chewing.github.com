@@ -1,0 +1,2 @@
+markdown: rdiscount
+permalink: /:year/:month/:day/:title

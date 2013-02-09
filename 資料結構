@@ -8,19 +8,17 @@
         2.詞庫教學
         3.操作教學
         4.障礙排除教學
-討論區(forum.html)
+開發者討論區(forum.html)
         1.使用者討論群組(超連結至Chewing IM Users)
         2.詞庫討論群組(超連結至新酷音輸入法詞庫libchewing-data)
+        3.任務管理群組(超連結至Google issue tracker)
+        4.工作人員列表
 加入開發團隊(join.html)
         1.前端網頁工程師：Html、CSS、JavaScript
         2.視覺設計師：PhotoShop、illustrator
         3.程式設計師
         4.文件翻譯人員
         5.團隊貢獻者列表
-開發者入口(developer.html)
-        1.開發者討論群組(超連結至Chewing IM Development)
-        2.任務管理群組(超連結至Google issue tracker)
-        3.工作人員列表
 相關報導(report.html)
         1.蒐集各部落客介紹新酷音的網頁(超連結)
 問答集(faq.html)

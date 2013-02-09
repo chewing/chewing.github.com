@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>
+{% if page.title != nil && page.title != '' %}
+			{{ page.title }} - {{ site.title-min }}
+{% else %}
+			{{ site.title }}
+{% endif %}
+		</title>
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap-navbar.css" />
+{% for item in page.css %}
+		<link rel="stylesheet" type="text/css" href="static/css/{{ item }}.css" />
+{% endfor %}
+		<base href="{{ site.url }}">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="static/js/bootstrap.js"></script>
+	</head>
+	<body>
+			{% include navbar.html %}
+		<div class="container">
+			{{ content }}
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

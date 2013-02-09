@@ -1,0 +1,18 @@
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navbar navbar-inverse">
+					<div class="navbar-inner">
+						<a class="brand" href="/"> Chewing </a>
+						<ul class="nav">
+{% for item in site.navigation %}
+	{% assign active = nil %}
+	{% if page.class == item.class %}
+		{% assign active = ' class="active"' %}
+	{% endif %}
+							<li{{ active }}><a href="{{ item.url }}">{{ item.text }}</a></li>
+{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>

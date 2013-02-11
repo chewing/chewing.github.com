@@ -1,0 +1,40 @@
+---
+layout: blank
+---
+<div class="row">
+	<div class="span4">
+		<div class="well" data-spy="affix" data-offset-top="80" style="padding: 8px 0">
+			<ul class="nav nav-list">
+{% foreach_faq_categories %}
+				<li><a href="#{{ category.id }}">{{ category.name }}</a></li>
+{% endforeach_faq_categories %}
+			</ul>
+		</div>
+	</div>
+	<div class="span8">
+{% foreach_faq_categories %}
+		<section id="{{ category.id }}">
+			<div class="page-header">
+				<h1>{{ category.name }}</h1>
+			</div>
+			<div class="accordion">
+	{% assign count = 0 %}
+	{% foreach_faq_items %}
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#{{ category.id }}" href="#{{ category.id }}_{{ count }}">
+							{{ item.title }}
+						</a>
+					</div>
+					<div id="{{ category.id }}_{{ count }}" class="accordion-body collapse">
+						<div class="accordion-inner">
+							{{ item.content }}
+						</div>
+					</div>
+				</div>
+	{% endforeach_faq_items %}
+			</div>
+		</section>
+{% endforeach_faq_categories %}
+	</div>
+</div>

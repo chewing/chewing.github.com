@@ -1,0 +1,7 @@
+.accordion-heading:hover {
+  background-color: #f5f5f5;
+}
+
+.accordion-heading a:hover {
+  text-decoration: none;
+}

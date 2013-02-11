@@ -2,7 +2,13 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title> {{ page.title }} </title>
+		<title>
+{% if page.title != nil && page.title != '' %}
+			{{ page.title }} - {{ site.title-min }}
+{% else %}
+			{{ site.title }}
+{% endif %}
+		</title>
 		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/bootstrap-navbar.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/index-carousel.css" />
@@ -12,44 +18,33 @@
 		<script src="static/js/bootstrap.js"></script>
 	</head>
 	<body>
-		<div class="navbar-wrapper">
-			<div class="container">
-				<div class="navbar navbar-inverse">
-					<div class="navbar-inner">
-						<a class="brand" href="/"> Chewing </a>
-						<ul class="nav">
-							<li><a href="download.html">Download</a></li>
-							<li><a href="screenshot.html">Screenshot</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="getinvolved">Get involed</a></li>
-							<li><a href="about.html">About</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+		{% include navbar.html %}
 		<div id="banner" class="carousel slide">
 			<div class="carousel-inner">
-				<div class="active item">
-					<img src="http://i.imgur.com/BIBxo5c.png" alt="chewing on openSUSE" />
+{% assign first = true %}
+{% for item in page.banner %}
+	{% if first %}
+		{% assign active = ' active' %}
+		{% assign first = false %}
+	{% else %}
+		{% assign active = '' %}
+	{% endif %}
+				<div class="item{{ active }}">
+					<img src="{{ item.url }}" />
 					<div class="container">
 						<div class="carousel-caption">
-							<h4>新酷音 @ openSUSE</h4>
-							<p>test</p>
+							<h1>{{ item.title }}</h1>
+							<p class="lead">{{ item.description }}</p>
 						</div>
 					</div>
 				</div>
-				<div class="item">bbbbb</div>
+{% endfor %}
 			</div>
 			<a class="carousel-control left" href="#banner" data-slide="next">&lsaquo;</a>
 			<a class="carousel-control right" href="#banner" data-slide="prev">&rsaquo;</a>
 		</div>
 		<div class="container">
-			<div class="row" style="margin-bottom: 40px;">
-				<div class="offset4 span4" style="text-align: center;">
-					<a class="btn btn-large btn-block btn-primary" href="/download.html">Try it now</a>
-				</div>
-			</div>
+			{{ content }}
 			<hr class="featurette-divider" />
 			<div class="row">
 				<div class="span4">

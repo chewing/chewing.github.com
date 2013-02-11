@@ -1,25 +1,33 @@
 ---
 layout: blank
+
+categories:
+  - id: win32
+    name: Windows 常見問題
+    items:
+    - title: 我已經下載了新版的新酷音程式，我要如何安裝？
+      content: |
+              只要執行該程式，安裝精靈會自動完成所有步驟，使用者要做的事就是按 下一步 下一步...。
 ---
 <div class="row">
 	<div class="span4">
-		<div class="well" data-spy="affix" data-offset-top="80" style="padding: 8px 0">
+		<div class="well affix" data-spy="affix" style="padding: 8px 0; width: 350px;">
 			<ul class="nav nav-list">
-{% foreach_faq_categories %}
+{% for category in page.categories %}
 				<li><a href="#{{ category.id }}">{{ category.name }}</a></li>
-{% endforeach_faq_categories %}
+{% endfor %}
 			</ul>
 		</div>
 	</div>
 	<div class="span8">
-{% foreach_faq_categories %}
+{% for category in page.categories %}
 		<section id="{{ category.id }}">
 			<div class="page-header">
 				<h1>{{ category.name }}</h1>
 			</div>
 			<div class="accordion">
 	{% assign count = 0 %}
-	{% foreach_faq_items %}
+	{% for item in category.items %}
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#{{ category.id }}" href="#{{ category.id }}_{{ count }}">
@@ -32,9 +40,9 @@ layout: blank
 						</div>
 					</div>
 				</div>
-	{% endforeach_faq_items %}
+	{% endfor %}
 			</div>
 		</section>
-{% endforeach_faq_categories %}
+{% endfor %}
 	</div>
 </div>

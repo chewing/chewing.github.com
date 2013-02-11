@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:day/:title
-safe: false
+safe: true
 
 title: "Chewing - Headquarter of Intelligent Chinese Phonetic Input Method Development - 新酷音輸入法"
 title-min: "Chewing - 新酷音輸入法"

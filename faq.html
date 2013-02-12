@@ -8,6 +8,37 @@ categories:
     - title: 我已經下載了新版的新酷音程式，我要如何安裝？
       content: |
               只要執行該程式，安裝精靈會自動完成所有步驟，使用者要做的事就是按 下一步 下一步...。
+    - title: 安裝過程中，發生了 chewing.ime 無法寫入的問題，請問要如何解決？
+      content: |
+              chewing.ime 無法寫入是因為被系統鎖住，可以先中斷安裝程序，請依照下列步驟：
+              <ul>
+                <li>請由 開始 -&gt; 控制台 -&gt; 地區及語言選項 -&gt; 語言 -&gt; 詳細資料，在預設輸入語言的選項，將預設輸入語言由新酷音改為其他輸入法；若原本的設定非新酷音輸入法，可略過。</li>
+                <li>重新開機或是重新登入系統。</li>
+                <li>再次執行安裝程式。</li>
+              </ul>
+    - title: 我是 windows9x/ME 的使用者，安裝新酷音輸入法後無法輸入文字，請問這該如何解決？
+      content: |
+              新酷音 0.3.4.2 版已解決此問題，請安裝新版
+    - title: 系統出現 buffer overrun (緩衝區溢位) 警告訊息，請問我該怎麼辦？
+      content: |
+              系統發生 buffer overrun 的問題，有可能是使用者詞庫損壞所引起，請把使用者詞庫刪除或是刪去其中損壞的字串，應可解決。<br />
+              如果刪除使用者詞庫 ( %appdata\Chewing\uhash.dat ) 後還是發生此問題，請來信告知 (參見 <a href="about.html">About</a> )。
+    - title: 新酷音輸入法有使用手冊嗎？
+      content: |
+              有。<br />
+              使用手冊：開始 -&gt; 程式集 -&gt; 新酷音輸入法 -&gt; 新酷音輸入法使用說明，或是可以在 輸入法工具列 最右邊的按鈕中找到。
+    - title: 本地詞庫編輯工具那是什麼？如何使用？
+      content: 本地詞庫編輯工具可以讓使用者編輯動態詞庫 (相對於靜態詞庫、內建詞庫) ，詳細的使用方法請見說明手冊。
+    - title: 我裝好新酷音了，可是第一次啟動新酷音的時候會有些時間上的延遲，請問這是怎麼回事？
+      content: |
+              第一次啟動新酷音的時候會載入詞庫，因此啟動會比較慢。<br />
+              您可以修改登錄檔 (registry) ，讓系統開機自動執行 chewingserver.exe ，以下是修改方法：<br />
+              <ul>
+                <li>開始 -&gt; 執行 -&gt; 輸入 regedit 開啟登錄檔編輯器</li>
+                <li>找到 HKEY_CURRENT_USER\Software\Microsoft\Windows\Current Version\Run</li>
+                <li>在右側視窗按下右鍵新增字串</li>
+                <li>名稱隨便取 (建議取個好記的名稱)，字串的內容是 %windir%\system32\IME\Chewing\ChewingServer.exe</li>
+
 ---
 <div class="row">
 	<div class="span4">
@@ -40,6 +71,7 @@ categories:
 						</div>
 					</div>
 				</div>
+		{% capture count %}{{ count | plus: 1 }}{% endcapture %}
 	{% endfor %}
 			</div>
 		</section>

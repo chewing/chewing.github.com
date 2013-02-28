@@ -1,0 +1,151 @@
+---
+layout: blank
+
+---
+<div class="row">
+	<div class="span4">
+		<div class="affix bs-docs-sidebar" data-spy="affix" style="padding: 8px 0; width: 350px;">
+			<ul class="nav nav-list bs-docs-sidenav">
+				<li><a href="#about">關於新酷音</a></li>
+				<li><a href="#contributors">關於開發者</a></li>
+				<li><a href="#contact">聯絡方式</a></li>
+				<li><a href="#license">第三方程式庫授權條款</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="span8">
+		<section id="about">
+			<div class="page-header">
+				<h1>關於新酷音</h1>
+			</div>
+			<p>最早的「酷音輸入法」是 <a href="http://www.csie.ntu.edu.tw/~b6506053/">龔律全</a> 與 <a href="https://plus.google.com/u/0/106631098488727416298/posts">陳康本</a> 兩人的資訊專題（分別在兩人就讀台大資工系與台大電機系的時期），由中央研究院資訊研究所的 <a href="http://www.iis.sinica.edu.tw/~tshsu">徐讚昇</a> 博士提供技術指導與超過兩年的經濟及設備支援，最終的成果選擇以 GPL 授權釋出，可說是 XIM 中最接近新注音或是自然輸入法的實作，詳情可參閱龔律全所撰寫的 <a href="doc/chewing-report.pdf">技術報告</a> (PDF)。</p>
+			<p>但是酷音輸入法的兩位原創者已不再維護，後續的發展由許多熱心的朋友移植到不同的平台上，諸如 TimHsu (crazykid) 與 jserv 維護的 JMCCE 1.4.x 中文終端機內建酷音輸入法、clkao 移植酷音到 MacOS X 與 IIIMF 架構，以及 gugod 接手 clkao 的 ChewingOSX 後，大幅改善實作的 SpaceChewing 計畫等。而新酷音就是扮演整合這些分支的角色，並且更廣泛移植與改良酷音輸入法的適用性，並且於 2004 年 12 月有獨立的專案資源，到目前為止，已有許多熱心的貢獻者加入開發行列，期待更多的朋友參與。</p>
+			<p>關於本計畫概況，可參閱新酷音計畫在 2004 國際開放源碼研討會 (ICOS 2004) 上的 <a href="doc/chewing-intro.html">簡報</a> (Adobe Flash 格式)。</p>
+		</section>
+		<p>&nbsp;</p>
+		<section id="contributors">
+			<div class="page-header">
+				<h1>關於開發者</h1>
+			</div>
+			<h3>酷音輸入法初期開發者</h3>
+			<ul>
+				<li><a href="http://www.csie.ntu.edu.tw/~b6506053/">龔律全</a><br />程式開發、演算法設計，以及技術文件撰寫</li>
+				<li><a href="https://plus.google.com/u/0/106631098488727416298/posts">陳康本</a><br />程式開發與演算法設計</li>
+				<li>中央研究院資訊研究所的<a href="http://www.iis.sinica.edu.tw/~tshsu">徐讚昇</a>博士<br />技術指導與超過兩年的經濟及設備支援</li>
+			</ul>
+			<h3>目前持續貢獻者</h3>
+			<ul>
+				<li>
+					<a href="http://about.me/jserv">Jim Huang (jserv)</a>
+					<p>計畫協調、Release Manager<br />有心參與本計畫者，請來信告知</p>
+				</li>
+				<li>
+					<a href="http://kanru.info/">Kanru Chen</a>
+					<p>維護 libchewing、XCIN-chewing、SCIM-chewing、Win32-Chewing，與 OpenVanilla 模組</p>
+				</li>
+				<li>
+					<a href="http://gugod.org/">Kang-min Liu (gugod)</a>
+					<p>酷音輸入法最初的貢獻者，SpaceChewing 與 OpenVanilla 的開發者</p>
+				</li>
+				<li>
+					<a href="http://zonble.net/">Wei-zhong Yang (zonble)</a>
+					<p>SpaceChewing 與 OpenVanilla 輸入法架構的開發者</p>
+				</li>
+				<li>
+					<a href="http://www.csie.ntu.edu.tw/~r92030/">Kuang-che Wu (kcwu)</a>
+					<p>libchewing 開發者，也是 XCIN 與 libtabe 現任維護者</p>
+				</li>
+				<li>
+					<a href="http://blog.lifestyle.idv.tw/~shiva/">Shiva Huang</a>
+					<p>RPM 套件維護與測試</p>
+				</li>
+				<li>
+					<a href="http://wiki.debian.org/AndrewLee">Andrew Lee</a>
+					<p>Icon 設計與 Debian 套件維護</p>
+				</li>
+				<li>
+					Jeff Chen
+					<p>擴充 gugod 所設計的漢語拼音模組</p>
+				</li>
+				<li>
+					<a href="http://lwhsu.org/">Li-wen Hsu (lwhsu)</a>
+					<p>Hosting 與系統維護</p>
+				</li>
+     		<li>
+					<a href="http://pcman.sayya.org/">Hong Jen Yee (PCMan)</a>
+					<p>Win32-chewing 的開發者</p>
+				</li>
+				<li>
+					<a href="http://www.seamxr.com/">James Huang (Sea Monster)</a>
+					<p>Win32-chewing 的開發者</p>
+				</li>
+				<li>
+					Andy Horng
+					<p>Win32-chewing 的開發者</p>
+				</li>
+				<li>
+					<a href="http://blog.dejieshi.com/">Caius Chance</a>
+					<p>修正若干 libchewing 與 scim-chewing 的程式缺陷</p>
+				</li>
+				<li>
+					<a href="https://plus.google.com/102919133545292787135/about">Tiberius Teng</a>
+					<p>貢獻選字捲頁的改進</p>
+				</li>
+				<li>
+					<a href="http://dingyichen.wordpress.com/">Ding-Yi Chen</a>
+					<p>修正 libchewing 若干瑕疵並維護 ibus-chewing</p>
+				</li>
+				<li>
+					<a href="http://utcr.org/">Youchen Lee</a>
+					<p>修正若干 scim-chewing 的程式缺陷</p>
+				</li>
+				<li>
+					<a href="http://search.cpan.org/~clkao/">Chia-liang Kao (clkao)</a>
+					<p>ChewingMacOSX 與 IIIMF-chewing 的草創者，XCIN 貢獻者</p>
+				</li>
+				<li>
+					<a href="http://timhsu.chroot.org/">Tim Hsu (crazykid)</a>
+					<p>JMCCE 1.4.x 的維護者，整合第一個非 X Window System 環境的酷音輸入法支援</p>
+				</li>
+			</ul>
+			<h3>尋求貢獻者加入計畫</h3>
+			我們目前需要以下人才，請各位不要吝嗇，加入我們吧：
+			<ul>
+				<li>Programming / Debugging / Testing / Bug-reporting</li>
+				<li>Art Design -- Logo, Icon, Website</li>
+				<li>Documentation</li>
+			</ul>
+		</section>
+		<p>&nbsp;</p>
+		<section id="contact">
+			<div class="page-header">
+				<h1>聯絡方式</h1>
+			</div>
+			<h3>討論群組</h3>
+			<ul>
+				<li>
+					<a href="http://groups.google.com/group/chewing">Chewing IM Users / 使用者討論群組</a>
+					<p>關於新酷音輸入法的一般性的討論，如安裝新酷音輸入法的議題、自由軟體授權、執行環境的討論，與建議事項等等...</p>
+				</li>
+				<li>
+					<a href="http://groups.google.com/group/chewing-devel">Chewing IM Development / 開發者討論群組</a>
+					<p>新酷音輸入法開發者的討論群組，若您對新酷音的程式開發有興趣，歡迎加入此群組。</p>
+				</li>
+			</ul>
+			<h3>回報問題</h3>
+			目前使用 <a href="http://code.google.com/p/chewing/issues/list">Google Code 的 issue tracker</a>。
+		</section>
+		<p>&nbsp;</p>
+		<section id="license">
+			<div class="page-header">
+				<h1>第三方程式庫授權條款</h1>
+			</div>
+			<ul>
+				<li>libchewing is licensed under the terms of the <a href="http://www.fsf.org/copyleft/lgpl.html">GNU Library General Public License</a>.</li>
+				<li>xcin-chewing is licensed under the terms of the <a href="http://www.fsf.org/copyleft/gpl.html">GNU General Public License</a>. (same as XCIN)</li>
+				<li>SCIM-chewing is license under the terms of the <a href="http://www.fsf.org/copyleft/gpl.html">GNU General Public License</a>. (same as SCIM)</li>
+				<li>windows-chewing is license under the terms of the <a href="http://www.fsf.org/copyleft/gpl.html">GNU General Public License</a>.</li>
+			</ul>
+		</section>
+	</div>
+</div>

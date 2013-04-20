@@ -20,6 +20,9 @@
 		<base href="{{ site.url }}">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="static/js/bootstrap.js"></script>
+{% for item in page.js %}
+		<script src="static/js/{{ item }}.js"></script>
+{% endfor %}
 	</head>
 	<body>
 		{% include navbar.html %}

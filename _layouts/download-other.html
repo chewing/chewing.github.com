@@ -7,10 +7,10 @@ css:
   - download-featurette
 ---
 <ul class="nav nav-pills">
-  <li class="active"><a href="#win" data-toggle="pill" class="lsf-icon" title="windows">Windows</a></li>
-  <li><a href="#mac" data-toggle="pill" class="lsf-icon" title="apple">Mac OS X</a></li>
-  <li><a href="#lin" data-toggle="pill" class="lsf-icon" title="ubuntu">Linux</a></li>
-  <li><a href="#source" data-toggle="pill" class="lsf-icon" title="terminal">Source</a></li>
+  <li class="active"><a href="#win" data-toggle="pill"><span class="lsf-icon" title="windows"></span>Windows</a></li>
+  <li><a href="#mac" data-toggle="pill"><span class="lsf-icon" title="apple"></span>Mac OS X</a></li>
+  <li><a href="#lin" data-toggle="pill"><span class="lsf-icon" title="ubuntu"></span>Linux / Unix-like</a></li>
+  <li><a href="#source" data-toggle="pill"><span class="lsf-icon" title="terminal"></span>Source</a></li>
 </ul>
 <div class="tab-content">
 	<div class="tab-pane fade in active" id="win">
@@ -37,22 +37,40 @@ css:
 	</div>
 	<div class="tab-pane fade" id="mac">
 		<div class="featurette">
-			<img class="featurette-image pull-right" src="static/img/download-banner.png" />
+			<img class="featurette-image pull-left img-rounded" style="margin-top: 0; margin-bottom: 2em; margin-left: 73px;" src="static/img/download-chewingOSX.jpg" />
 			<h2 class="featurette-heading">現在就下載並安裝新酷音</h2>
-			<h3 class="featurette-heading"><span class="muted">獲得意想不到的中文輸入體驗</span></h3>
+			<h3 class="featurette-heading"><span class="muted">透過 <a href="http://chewingosx.sourceforge.net/" target="_blank">ChewingOSX </a></span></h3>
 			<p class="lead">
-				<a class="btn btn-large btn-inverse">此網頁建置中</a>
+				<a class="btn btn-large btn-primary" href="http://sourceforge.net/projects/chewingosx/files/">按此下載新酷音</a>
 			</p>
 		</div>
 	</div>
 	<div class="tab-pane fade" id="lin">
 		<div class="featurette">
-			<img class="featurette-image pull-right" src="static/img/download-banner.png" />
-			<h2 class="featurette-heading">現在就下載並安裝新酷音</h2>
-			<h3 class="featurette-heading"><span class="muted">獲得意想不到的中文輸入體驗</span></h3>
-			<p class="lead">
-				<a class="btn btn-large btn-inverse">此網頁建置中</a>
-			</p>
+			<div class="featurette-image pull-left" style="width: 475px;">
+				<table class="table table-striped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>發行版</th>
+							<th>已收錄套件</th>
+							<th>備註</th>
+						</tr>
+					</thead>
+					<tbody>
+{% for item in page.linux %}
+						<tr><td colspan="3">{{ item.dist }}</td></tr>
+	{% if item.desc != null %}
+						<tr><td rowspan="2"></td><td colspan="2">{{ item.pkg }}</td></tr>
+						<tr><td colspan="2">{{ item.desc }}</td></tr>
+	{% else %}
+						<tr><td></td><td colspan="2">{{ item.pkg }}</td></tr>
+	{% endif %}
+{% endfor %}
+					</tbody>
+				</table>
+			</div>
+			<h2 class="featurette-heading">現在就安裝新酷音套件</h2>
+			<h3 class="featurette-heading"><span class="muted">體驗神奇夢幻的中文輸入</span></h3>
 		</div>
 	</div>
 	<div class="tab-pane fade" id="source">

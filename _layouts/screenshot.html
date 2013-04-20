@@ -1,0 +1,38 @@
+---
+layout: blank
+title: Screenshot - 相關截圖
+class: screenshot
+css:
+  - screenshot-span
+  - bootstrap-lightbox.min
+js:
+  - bootstrap-lightbox
+---
+<div class="container-fluid">
+{% assign count = 0 %}
+{% for item in page.screenshot %}
+	{% cycle 'new-row': '<div class="row-fluid">', '', '', '', '', '</div>' %}
+		<div class="span4">
+			<h3>{{ item.title }}</h3>
+			<p>{{ item.desc }}</p>
+			<a data-toggle="lightbox" href="#lightbox{{ count }}" class="thumbnail"><img src="{{ item.img }}" /></a>
+		</div>
+	{% cycle 'new-row': '<div class="row-fluid">', '', '', '', '', '</div>' %}
+	{% capture count %}{{ count | plus: 1 }}{% endcapture %}
+{% endfor %}
+</div>
+{% assign count = 0 %}
+{% for item in page.screenshot %}
+<div id="lightbox{{ count }}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+	<div class='lightbox-header'>
+		<button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
+	</div>
+	<div class='lightbox-content'>
+		<img src="{{ item.img }}">
+		<div class="lightbox-caption">
+			<p>{{ item.title }}</p>
+		</div>
+	</div>
+</div>
+	{% capture count %}{{ count | plus: 1 }}{% endcapture %}
+{% endfor %}

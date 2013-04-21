@@ -21,27 +21,31 @@
 		{% include navbar.html %}
 		<div id="banner" class="carousel slide">
 			<div class="carousel-inner">
-{% assign first = true %}
+{% assign active = ' active' %}
 {% for item in page.banner %}
-	{% if first %}
-		{% assign active = ' active' %}
-		{% assign first = false %}
-	{% else %}
-		{% assign active = '' %}
-	{% endif %}
 				<div class="item{{ active }}">
-					<img src="{{ item.url }}" />
 					<div class="container">
-						<div class="carousel-caption">
-							<h1>{{ item.title }}</h1>
-							<p class="lead">{{ item.description }}</p>
+						<div class="featurette">
+							<img class="featurette-image pull-right img-rounded" src="{{ item.url }}" style="max-width: 435px;" />
+							<h2 class="featurette-heading">{{ item.title }}</h2>
+							<h3 class="featurette-heading">{{ item.description }}</h3>
 						</div>
 					</div>
 				</div>
+	{% assign active = '' %}
 {% endfor %}
 			</div>
 			<a class="carousel-control left" href="#banner" data-slide="next">&lsaquo;</a>
 			<a class="carousel-control right" href="#banner" data-slide="prev">&rsaquo;</a>
+			<ol class="carousel-indicators">
+{% assign i = 0 %}
+{% assign active = ' class="active"' %}
+{% for item in page.banner %}
+				<li data-target="#banner" data-slide-to="{{ i }}"{{ active }}></li>
+	{% assign active = '' %}
+	{% capture i %}{{ i | plus: 1 }}{% endcapture %}
+{% endfor %}
+			</ol>
 		</div>
 		<div class="container">
 			{{ content }}

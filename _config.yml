@@ -1,5 +1,5 @@
 markdown: rdiscount
-permalink: /:year/:month/:day/:title
+permalink: blog/:year/:month/:day/:title
 safe: true
 
 title: "Chewing - Headquarter of Intelligent Chinese Phonetic Input Method Development - 新酷音輸入法"
@@ -18,7 +18,10 @@ navigation:
     class: faq
   - text: Get involed
     url: getinvoled.html
-    class: getinvolved
+    class: getinvoled
+  - text: Blog
+    url: blog.html
+    class: blog
   - text: About
     url: about.html
     class: about

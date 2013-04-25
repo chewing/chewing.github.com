@@ -12,6 +12,14 @@
 							<li{{ active }}><a href="{{ item.url }}">{{ item.text }}</a></li>
 {% endfor %}
 						</ul>
+{% comment %}
+put travis-ci test result here
+{% endcomment %}
+						<ul class="nav pull-right">
+							<li>
+								{% include travis-ci.html %}
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

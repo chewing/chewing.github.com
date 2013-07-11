@@ -1,66 +1,67 @@
-html {
-	overflow-x: hidden;
-}
 body {
 	margin: 0;
-	overflow-x: hidden;
-	background-color: #FCD979;
-	background-image: linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
-	  linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
-	  linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
-	  linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
-	background-image: -moz-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
-	  -moz-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
-	  -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
-	  -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
-	background-image: -o-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
-	  -o-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
-	  -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
-	  -o-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
-	background-image: -webkit-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
-	  -webkit-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
-	  -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
-	  -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
-	background-size: 26px, 58px, 74px, 106px;
+	background-color: #0f2540;
+	background-image: url('texture.png');
 }
 
-body > header {
-	text-align: center;
+._hide {
+    display: none;
 }
 
-nav {
+.navigation {
+	background-color: #373c38;
+	width: 100%;
 	position: fixed;
-	background: url("logo.png") no-repeat bottom center;
-	top: 4em;
-	padding: 1em 1em 135px 1em;
-	width: 8em;
+	z-index: 9999;
+	border-bottom: 1px solid #fcfaf2;
 }
 
-nav header {
-	text-indent: -999em;
-	height: 0;
+.navigation a {
+    text-decoration: none;
+    color: #fcfaf2;
 }
 
-nav ul {
-	list-style-type: none;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 0.5em;
-	padding: 0.5em 0 0.5em 1.5em;
+.navigation__home {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 1em;
+    display: inline-block;
 }
 
-nav ul li {
-	margin-bottom: 0.5em;
+.navigation__content {
+    display: inline-block;
+}
+
+.navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__item {
+    display: inline-block;
+    margin: 0 .5em;
+    padding: .5em;
 }
 
 #content {
-	margin: 1em 1em 0 10em;
-	padding: 1em;
-	background-color: rgba(255, 255, 255, 0.5);
+	padding: 4em 2em 4em;
 	border-radius: 0.5em;
+	color: #fcfaf2;
+}
+
+#content a {
+    color: #fcfaf2;
 }
 
 #content article p {
-	text-indent: 2em;	
+	text-indent: 2em;
+	line-height: 1.5em;
+}
+
+#content article p img {
+    display: block;
+    margin: 0 auto;
 }
 
 #news {
@@ -77,18 +78,13 @@ time {
 
 h3 {
 	position: relative;
-	background-color: #FAD850;
+	background-color: #1c1c1c;
 	margin: 0;
-	padding: .5em;
-}
-
-h3:after {
-   content: '';
-   position: absolute;
-   background: #FAD850;
-   top: 0;
-   bottom: 0;
-   width: 999em;
+	margin-left: -1em;
+	padding: .8em;
+	padding-left: 1.5em;
+	color: #fcfaf2;
+	box-shadow: inset 0 0 1px 1px #434343;
 }
 
 h3 time {
@@ -96,6 +92,12 @@ h3 time {
 }
 
 footer {
-	padding: 0.5em;
+	padding: 1em;
 	text-align: center;
+	color: #fcfaf2;
+	background-color: #373c38;
+	border-top: 1px solid #fcfaf2;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
 }

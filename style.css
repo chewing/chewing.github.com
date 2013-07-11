@@ -83,10 +83,20 @@ body {
 
 #news {
 	list-style-type: none;
+	border-left: 2px solid #828282;
+	margin-left: 4em;
 }
 
 #news li {
-	padding: 0.5em 0;
+	padding: 1em 0;
+	margin: .5em 0;
+}
+
+#news time {
+    margin: 1em 2em 3em -6em;
+    background-color: #828282;
+    padding: .5em;
+    border-radius: .3em;
 }
 
 h3 {

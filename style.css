@@ -89,10 +89,6 @@ body {
 	padding: 0.5em 0;
 }
 
-time {
-	margin-right: 2em;
-}
-
 h3 {
 	position: relative;
 	background-color: #1c1c1c;
@@ -105,7 +101,15 @@ h3 {
 }
 
 h3 time {
-	margin-left: 2em;
+	float: right;
+	margin-right: 1em;
+}
+
+h3 span {
+    display: inline-block;
+    margin-left: .5em;
+    padding-left: .5em;
+    color: #828282;
 }
 
 footer {

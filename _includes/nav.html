@@ -1,8 +1,23 @@
 <ul class="navigation__list">
-    <li class="navigation__item"><a href="news.html" title="消息">News</a></li>
-    <li class="navigation__item"><a href="download.html" title="下載">Download</a></li>
-    <li class="navigation__item"><a href="screenshots.html" title="擷圖">Screenshots</a></li>
-    <li class="navigation__item"><a href="development.html" title="開發">Development</a></li>
-    <li class="navigation__item"><a href="support.html" title="協助">Support</a></li>
-    <li class="navigation__item"><a href="about.html" title="關於">About</a></li>
+    <li class="navigation__item{% if page.title == "Home" %} current{% endif %}">
+        <a href="/" title="首頁">Home</a>
+    </li>
+    <li class="navigation__item{% if page.title == "News" %} current{% endif %}">
+        <a href="news.html" title="消息">News</a>
+    </li>
+    <li class="navigation__item{% if page.title == "Download" %} current{% endif %}">
+        <a href="download.html" title="下載">Download</a>
+    </li>
+    <li class="navigation__item{% if page.title == "Screenshots" %} current{% endif %}">
+        <a href="screenshots.html" title="擷圖">Screenshots</a>
+    </li>
+    <li class="navigation__item{% if page.title == "Development" %} current{% endif %}">
+        <a href="development.html" title="開發">Development</a>
+    </li>
+    <li class="navigation__item{% if page.title == "Support" %} current{% endif %}">
+        <a href="support.html" title="協助">Support</a>
+    </li>
+    <li class="navigation__item{% if page.title == "About" %} current{% endif %}">
+        <a href="about.html" title="關於">About</a>
+    </li>
 </ul>

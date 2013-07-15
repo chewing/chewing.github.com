@@ -99,6 +99,31 @@ body {
     border-radius: .3em;
 }
 
+#contributor {
+	list-style-type: none;
+	margin: 0;
+}
+
+#contributor li {
+    padding: 1em 0;
+}
+    
+#contributor li img, #contributor li div {
+    border-radius: 50%;
+    border: 3px solid #fcfaf2;
+    float: left;
+}
+
+#contributor li div {
+    height: 60px;
+    width: 60px;
+    background-color: #828282;
+}
+
+#contributor li a {
+    margin-left: 2em;
+}
+
 h3 {
 	position: relative;
 	background-color: #1c1c1c;

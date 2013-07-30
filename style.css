@@ -8,6 +8,15 @@ body {
     display: none;
 }
 
+ul._inline {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul._inline > li {
+    display: inline-block;
+}
+
 .logo {
     float: right;
     display: inline-block;
@@ -145,6 +154,10 @@ h3 span {
     margin-left: .5em;
     padding-left: .5em;
     color: #828282;
+}
+
+.status {
+    margin-left: 2em;
 }
 
 footer {

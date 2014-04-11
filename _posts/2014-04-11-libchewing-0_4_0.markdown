@@ -84,6 +84,6 @@ What's New in libchewing 0.4.0
 
 [Download](https://github.com/chewing/libchewing/releases/tag/v0.4.0)
 
-File Name: libchewing-0.4.0.tar.bz2
-SHA1: 7409b0a6753e14510c96574714dcec86c7b10138
-SHA512: 6a9b12816c13d7b4a0a3ca9e73560fcbb8d3e032aab3f5b90f40a6de9e7d81e934536242b4ac26db33739c7841185cc4aa10a8272cd26a76c27bdac6e75aa4a9
+* File Name: libchewing-0.4.0.tar.bz2
+* SHA1: 7409b0a6753e14510c96574714dcec86c7b10138
+* SHA512: 6a9b12816c13d7b4a0a3ca9e73560fcbb8d3e032aab3f5b90f40a6de9e7d81e934536242b4ac26db33739c7841185cc4aa10a8272cd26a76c27bdac6e75aa4a9

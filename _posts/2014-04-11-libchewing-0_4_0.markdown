@@ -1,4 +1,10 @@
-What's New in libchewing 0.4.0 (Apr 11, 2014)
+---
+layout: post
+title: libchewing 0.4.0 Released
+---
+libchewing 0.4.0 Released: 2014-04-11
+
+What's New in libchewing 0.4.0
 ---------------------------------------------------------
 * Add the following APIs:
   - Userphrase manipulation

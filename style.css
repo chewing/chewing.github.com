@@ -116,7 +116,7 @@ ul._inline > li {
 #contributor li {
     padding: 1em 0;
 }
-    
+
 #contributor li img, #contributor li div {
     border-radius: 50%;
     border: 3px solid #fcfaf2;
@@ -169,4 +169,103 @@ footer {
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+}
+
+.menu_btm, .big_hide{
+	display:none;
+}
+
+/*for tablet*/
+@media screen and (max-width: 750px)
+{
+	.hide {
+		display:none;
+	}
+
+	.menu_btm, .logo {
+		display:block;
+		height:1em;
+		width:3em;
+		padding: 0.4em 0.25em;
+		margin: 0px 0.5em;
+		color:white;
+	}
+
+	.navigation__item {
+		padding: 0.4em 0.5em;
+		width:100%;
+	}
+
+	.navigation__item.current {
+		background-color: #333;
+		box-shadow:-1px -1px 1px black;
+		margin-right:;
+	}
+
+	.navigation__item.current::after {
+		display:none;
+	}
+}
+
+/*for cell phone*/
+@media screen and (max-width: 400px)
+{
+	h1 {
+		margin: .5em 0 0;
+		font-size: 1.5em;
+	}
+
+	h2{
+		margin: .5em 0 0;
+		font-size: 1em;
+	}
+
+	h3 {
+		margin: .5em 0 0;
+		font-size: .75em;
+		height: auto;
+	}
+
+	img {
+		width:100%;
+	}
+
+	ol, ul{
+		padding-left: .4em;
+		font-size: .9em;
+	}
+
+	p, li {
+		word-wrap: break-word;
+	}
+
+	#content {
+		padding: 1.5em 1.3em;
+	}
+
+	#content article p {
+		text-indent: 0;
+		font-size:1em;
+	}
+
+	#news{
+		padding-left: 40px;
+	}
+
+	#news time {
+		margin-right: 0;
+	}
+
+	footer {
+		padding: .5em 0;
+		font-size: .7em;
+	}
+
+	#contributor li img, #contributor li div{
+		width:33%;
+		margin:0 .5em;
+	}
+	#contributor li a{
+		margin-left:0;
+	}
 }

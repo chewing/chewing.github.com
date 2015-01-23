@@ -51,19 +51,18 @@ ul._inline {
     padding: .8em .5em;
     position: relative;
     line-height: 1.2em;
-}
-
-.navigation__item.current::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 8px solid transparent;
-    border-bottom-color: #fcfaf2;
-    bottom: 0;
-    left: 50%;
-    margin-left: -8px;
+		&.current::after {
+			display: block;
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 8px solid transparent;
+			border-bottom-color: #fcfaf2;
+			bottom: 0;
+			left: 50%;
+			margin-left: -8px;
+		}
 }
 
 #content {

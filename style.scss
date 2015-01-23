@@ -31,11 +31,10 @@ ul._inline {
 	position: fixed;
 	z-index: 9999;
 	border-bottom: 1px solid #fcfaf2;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #fcfaf2;
+	& a {
+		text-decoration: none;
+		color: #fcfaf2;
+	}
 }
 
 .navigation__list {

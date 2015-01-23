@@ -69,24 +69,20 @@ ul._inline {
 	padding: 4em 2em 4em;
 	border-radius: 0.5em;
 	color: #fcfaf2;
-}
-
-#content a {
-    color: #fcfaf2;
-}
-
-#content li {
-    line-height: 1.5em;
-}
-
-#content article p {
-	text-indent: 2em;
-	line-height: 1.5em;
-}
-
-#content article p img {
-    display: block;
-    margin: 0 auto;
+	& a {
+		color: #fcfaf2;
+	}
+	& li {
+		line-height: 1.5em;
+	}
+	& article p {
+		text-indent: 2em;
+		line-height: 1.5em;
+		& img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
 }
 
 #news {

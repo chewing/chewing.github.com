@@ -13,10 +13,9 @@ body {
 ul._inline {
     list-style-type: none;
     padding: 0;
-}
-
-ul._inline > li {
-    display: inline-block;
+		& li {
+			display: inline-block;
+		}
 }
 
 .logo {

@@ -104,26 +104,23 @@ ul._inline {
 #contributor {
 	list-style-type: none;
 	margin: 0;
-}
-
-#contributor li {
-    padding: 1em 0;
-}
-
-#contributor li img, #contributor li div {
-    border-radius: 50%;
-    border: 3px solid #fcfaf2;
-    float: left;
-}
-
-#contributor li div {
-    height: 60px;
-    width: 60px;
-    background-color: #828282;
-}
-
-#contributor li a {
-    margin-left: 2em;
+	& li {
+		& a {
+			margin-left: 2em;
+		}
+		padding: 1em 0;
+		& img {
+			border-radius: 50%;
+			border: 3px solid #fcfaf2;
+			float: left;
+		}
+		& div {
+			@extend img;
+			height: 60px;
+			width: 60px;
+			background-color: #828282;
+		}
+	}
 }
 
 h3 {

@@ -1,5 +1,7 @@
 ---
 ---
+@import "color";
+
 body {
 	margin: 0;
 	background-color: #0f2540;
@@ -22,18 +24,18 @@ ul._inline {
     float: right;
     display: inline-block;
     padding: .8em 1em .8em 0;
-    color: #fcfaf2;
+    color: $font-color;
 }
 
 .navigation {
-	background-color: #373c38;
+	background-color: $bg-color1;
 	width: 100%;
 	position: fixed;
 	z-index: 9999;
-	border-bottom: 1px solid #fcfaf2;
+	border-bottom: 1px solid $font-color;
 	& a {
 		text-decoration: none;
-		color: #fcfaf2;
+		color: $font-color;
 	}
 }
 
@@ -58,7 +60,7 @@ ul._inline {
 			width: 0;
 			height: 0;
 			border: 8px solid transparent;
-			border-bottom-color: #fcfaf2;
+			border-bottom-color: $font-color;
 			bottom: 0;
 			left: 50%;
 			margin-left: -8px;
@@ -68,9 +70,9 @@ ul._inline {
 #content {
 	padding: 4em 2em 4em;
 	border-radius: 0.5em;
-	color: #fcfaf2;
+	color: $font-color;
 	& a {
-		color: #fcfaf2;
+		color: $font-color;
 	}
 	& li {
 		line-height: 1.5em;
@@ -87,7 +89,7 @@ ul._inline {
 
 #news {
 	list-style-type: none;
-	border-left: 2px solid #828282;
+	border-left: 2px solid $bg-color2;
 	margin-left: 4em;
 	& li {
 		padding: 1em 0;
@@ -95,7 +97,7 @@ ul._inline {
 	}
 	& time {
 		margin: 1em 2em 3em -6em;
-		background-color: #828282;
+		background-color: $bg-color2;
 		padding: .5em;
 		border-radius: .3em;
 	}
@@ -111,14 +113,14 @@ ul._inline {
 		padding: 1em 0;
 		& img {
 			border-radius: 50%;
-			border: 3px solid #fcfaf2;
+			border: 3px solid $font-color;
 			float: left;
 		}
 		& div {
 			@extend img;
 			height: 60px;
 			width: 60px;
-			background-color: #828282;
+			background-color: $bg-color2;
 		}
 	}
 }
@@ -130,7 +132,7 @@ h3 {
 	margin-left: -1em;
 	padding: .8em;
 	padding-left: 1.5em;
-	color: #fcfaf2;
+	color: $font-color;
 	box-shadow: inset 0 0 1px 1px #434343;
 	& time {
 		float: right;
@@ -140,7 +142,7 @@ h3 {
 		display: inline-block;
 		margin-left: .5em;
 		padding-left: .5em;
-		color: #828282;
+		color: $bg-color2;
 	}
 }
 
@@ -151,9 +153,9 @@ h3 {
 footer {
 	padding: 1em;
 	text-align: center;
-	color: #fcfaf2;
-	background-color: #373c38;
-	border-top: 1px solid #fcfaf2;
+	color: $font-color;
+	background-color: $bg-color1;
+	border-top: 1px solid $font-color;
 	width: 100%;
 	position: fixed;
 	bottom: 0;

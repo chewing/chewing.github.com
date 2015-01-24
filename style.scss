@@ -15,7 +15,7 @@ body {
 ul._inline {
     list-style-type: none;
     padding: 0;
-		& li {
+		> li {
 			display: inline-block;
 		}
 }
@@ -33,7 +33,7 @@ ul._inline {
 	position: fixed;
 	z-index: 9999;
 	border-bottom: 1px solid $font-color;
-	& a {
+	a {
 		text-decoration: none;
 		color: $font-color;
 	}
@@ -71,16 +71,16 @@ ul._inline {
 	padding: 4em 2em 4em;
 	border-radius: 0.5em;
 	color: $font-color;
-	& a {
+	a {
 		color: $font-color;
 	}
-	& li {
+	li {
 		line-height: 1.5em;
 	}
-	& article p {
+	article p {
 		text-indent: 2em;
 		line-height: 1.5em;
-		& img {
+		img {
 			display: block;
 			margin: 0 auto;
 		}
@@ -91,11 +91,11 @@ ul._inline {
 	list-style-type: none;
 	border-left: 2px solid $bg-color2;
 	margin-left: 4em;
-	& li {
+	li {
 		padding: 1em 0;
 		margin: .5em 0;
 	}
-	& time {
+	time {
 		margin: 1em 2em 3em -6em;
 		background-color: $bg-color2;
 		padding: .5em;
@@ -106,17 +106,17 @@ ul._inline {
 #contributor {
 	list-style-type: none;
 	margin: 0;
-	& li {
-		& a {
+	li {
+		a {
 			margin-left: 2em;
 		}
 		padding: 1em 0;
-		& img {
+		img {
 			border-radius: 50%;
 			border: 3px solid $font-color;
 			float: left;
 		}
-		& div {
+		div {
 			@extend img;
 			height: 60px;
 			width: 60px;
@@ -134,11 +134,11 @@ h3 {
 	padding-left: 1.5em;
 	color: $font-color;
 	box-shadow: inset 0 0 1px 1px #434343;
-	& time {
+	time {
 		float: right;
 		margin-right: 1em;
 	}
-	& span {
+	span {
 		display: inline-block;
 		margin-left: .5em;
 		padding-left: .5em;

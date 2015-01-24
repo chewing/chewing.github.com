@@ -1,0 +1,162 @@
+---
+---
+@import "color";
+
+body {
+	margin: 0;
+	background-color: #0f2540;
+	background-image: url('texture.png');
+}
+
+._hide {
+    display: none;
+}
+
+ul._inline {
+    list-style-type: none;
+    padding: 0;
+		> li {
+			display: inline-block;
+		}
+}
+
+.logo {
+    float: right;
+    display: inline-block;
+    padding: .8em 1em .8em 0;
+    color: $font-color;
+}
+
+.navigation {
+	background-color: $bg-color1;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	border-bottom: 1px solid $font-color;
+	a {
+		text-decoration: none;
+		color: $font-color;
+	}
+}
+
+.navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+    vertical-align: bottom;
+}
+
+.navigation__item {
+    display: inline-block;
+    margin: 0 .5em;
+    padding: .8em .5em;
+    position: relative;
+    line-height: 1.2em;
+		&.current::after {
+			display: block;
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 8px solid transparent;
+			border-bottom-color: $font-color;
+			bottom: 0;
+			left: 50%;
+			margin-left: -8px;
+		}
+}
+
+#content {
+	padding: 4em 2em 4em;
+	border-radius: 0.5em;
+	color: $font-color;
+	a {
+		color: $font-color;
+	}
+	li {
+		line-height: 1.5em;
+	}
+	article p {
+		text-indent: 2em;
+		line-height: 1.5em;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+#news {
+	list-style-type: none;
+	border-left: 2px solid $bg-color2;
+	margin-left: 4em;
+	li {
+		padding: 1em 0;
+		margin: .5em 0;
+	}
+	time {
+		margin: 1em 2em 3em -6em;
+		background-color: $bg-color2;
+		padding: .5em;
+		border-radius: .3em;
+	}
+}
+
+#contributor {
+	list-style-type: none;
+	margin: 0;
+	li {
+		a {
+			margin-left: 2em;
+		}
+		padding: 1em 0;
+		img {
+			border-radius: 50%;
+			border: 3px solid $font-color;
+			float: left;
+		}
+		div {
+			@extend img;
+			height: 60px;
+			width: 60px;
+			background-color: $bg-color2;
+		}
+	}
+}
+
+h3 {
+	position: relative;
+	background-color: #1c1c1c;
+	margin: 0;
+	margin-left: -1em;
+	padding: .8em;
+	padding-left: 1.5em;
+	color: $font-color;
+	box-shadow: inset 0 0 1px 1px #434343;
+	time {
+		float: right;
+		margin-right: 1em;
+	}
+	span {
+		display: inline-block;
+		margin-left: .5em;
+		padding-left: .5em;
+		color: $bg-color2;
+	}
+}
+
+.status {
+    margin-left: 2em;
+}
+
+footer {
+	padding: 1em;
+	text-align: center;
+	color: $font-color;
+	background-color: $bg-color1;
+	border-top: 1px solid $font-color;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}

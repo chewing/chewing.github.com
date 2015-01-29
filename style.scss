@@ -1,6 +1,4 @@
----
----
-@import "color";
+@import '_sass/color';
 
 body {
 	margin: 0;
@@ -9,22 +7,22 @@ body {
 }
 
 ._hide {
-    display: none;
+	display: none;
 }
 
 ul._inline {
-    list-style-type: none;
-    padding: 0;
-		> li {
-			display: inline-block;
-		}
+	list-style-type: none;
+	padding: 0;
+	> li {
+		display: inline-block;
+	}
 }
 
 .logo {
-    float: right;
-    display: inline-block;
-    padding: .8em 1em .8em 0;
-    color: $font-color;
+	float: right;
+	display: inline-block;
+	padding: .8em 1em .8em 0;
+	color: $font-color;
 }
 
 .navigation {
@@ -40,31 +38,31 @@ ul._inline {
 }
 
 .navigation__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 1em;
-    vertical-align: bottom;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 1em;
+	vertical-align: bottom;
 }
 
 .navigation__item {
-    display: inline-block;
-    margin: 0 .5em;
-    padding: .8em .5em;
-    position: relative;
-    line-height: 1.2em;
-		&.current::after {
-			display: block;
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 0;
-			border: 8px solid transparent;
-			border-bottom-color: $font-color;
-			bottom: 0;
-			left: 50%;
-			margin-left: -8px;
-		}
+	display: inline-block;
+	margin: 0 .5em;
+	padding: .8em .5em;
+	position: relative;
+	line-height: 1.2em;
+	&.current::after {
+		display: block;
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 8px solid transparent;
+		border-bottom-color: $font-color;
+		bottom: 0;
+		left: 50%;
+		margin-left: -8px;
+	}
 }
 
 #content {
@@ -147,7 +145,7 @@ h3 {
 }
 
 .status {
-    margin-left: 2em;
+	margin-left: 2em;
 }
 
 footer {

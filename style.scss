@@ -76,6 +76,7 @@ ul._inline {
 	}
 	li {
 		line-height: 1.5em;
+		word-break: break-all;
 	}
 	article p {
 		text-indent: 2em;
@@ -160,3 +161,5 @@ footer {
 	position: fixed;
 	bottom: 0;
 }
+
+@import "layout";

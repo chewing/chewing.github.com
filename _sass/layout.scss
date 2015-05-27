@@ -1,0 +1,50 @@
+#nav-trigger {display: none;}
+
+@media screen and (min-width: 832px) {
+    nav > label  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 832px) {
+
+  .navigation__list, .navigation__item.current::after {display: none;}
+
+  nav {
+    min-height: 2.5em;
+    height:auto;
+    width: 100%;
+
+    label {
+        display: block;
+
+        img {padding: .75em 1em;}
+    }
+
+    input:checked ~ ul.navigation__list {
+        display: block;
+        line-height: 1.5em;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            width: 300px;
+
+            a {
+                display: block;
+                padding: .25em 1em;
+            }
+        }
+    }
+}
+
+  #content {
+    padding: 4em 2em 0;
+  }
+
+  footer {
+    position: static;
+    padding: 1em 0;
+  }
+
+}

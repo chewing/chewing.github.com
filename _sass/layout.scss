@@ -1,0 +1,123 @@
+#nav-trigger {display: none;}
+
+@media screen and (min-width: 832px) {
+    nav > label  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 832px) {
+
+    .navigation__list, .navigation__item.current::after {display: none;}
+
+    nav {
+        min-height: 2.5em;
+        height:auto;
+        width: 100%;
+
+        label {
+            display: block;
+
+            img {padding: .75em 1em;}
+        }
+
+        input:checked ~ ul.navigation__list {
+            display: block;
+            line-height: 1.5em;
+
+            li {
+                display: inline-block;
+                margin: 0;
+                width: 300px;
+
+                a {
+                    display: block;
+                    padding: .25em 1em;
+                }
+            }
+        }
+    }
+
+    #content {
+        padding: 4em 2em 0;
+
+        h2 {
+      		font-size: 1em;
+      	}
+
+      	h3 {
+      		margin: .5em 0 0;
+
+          time {
+            float: none;
+            margin-top: .25em;
+            display: block;
+            text-align: right;
+          }
+      	}
+
+      	img {
+      		max-width:100%;
+      	}
+
+        ul {
+          padding-left: 20px;
+
+          &#news {
+              padding-left: 40px;
+          }
+        }
+    }
+
+	footer {
+        position: static;
+        width: 95%;
+        padding: 1em 2.5%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+    #content ul {
+        padding-left: 10px;
+
+        &#news {
+            padding: 0;
+            margin: 2em .5em 0;
+
+            li {
+                padding: 0 0 2em;
+                margin: 0;
+
+                time {
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 1em;
+                    border-radius: 0;
+                }
+
+                a {
+                    display: block;
+                    margin: 1em;
+                }
+            }
+        }
+
+        &#contributor li {
+            text-align: center;
+
+            img, div {
+                float: none;
+                height: 66px;
+                width: 66px;
+                margin: 0 auto;
+            }
+
+            a {
+                display: block;
+                margin-left: 0;
+            }
+
+            p {text-align: left;}
+        }
+    }
+}

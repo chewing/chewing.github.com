@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8"/>
 	<link href="style.css" rel="stylesheet"/>
-	<link rel="alternate" type="application/rss+xml" title="FEED" href="atom.xml">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	{% feed_meta %}
 	<title>{{ page.title }}&mdash;新酷音輸入法</title>
 </head>
 <body>
@@ -19,9 +19,9 @@
             {% include nav.html %}
         </nav>
 	</header>
-	<div id="content">
+	<main id="content">
 {{ content }}
-	</div>
+	</main>
 	<footer>
 		Copyright &copy; 2004&ndash;{{ site.time | date: '%Y' }} by Chewing Core Team.
 	</footer>

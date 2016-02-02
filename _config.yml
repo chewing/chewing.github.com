@@ -11,3 +11,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+gems:
+  - jekyll-feed
+feed:
+  path: atom.xml
+name: 新酷音輸入法
+description: "Chewing / 新酷音: 智慧型注音輸入法發展總部"
+url: http://chewing.im
+author:
+  name: Chewing Core Team
+  email: chewing-devel@googlegroups.com

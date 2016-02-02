@@ -1,11 +1,17 @@
 ---
+# keep the first three line front matter
 ---
 @import "color";
 
 body {
 	margin: 0;
 	background-color: #0f2540;
-	background-image: url('texture.png');
+	background-image:
+		linear-gradient(90deg, rgba(255,255,255,.007) 50%, transparent 50%),
+		linear-gradient(90deg, rgba(255,255,255,.013) 50%, transparent 50%),
+		linear-gradient(90deg, transparent 50%, rgba(255,255,255,.017) 50%),
+		linear-gradient(90deg, transparent 50%, rgba(255,255,255,.019) 50%);
+	background-size: 13px, 29px, 37px, 53px;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;

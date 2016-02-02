@@ -1,4 +1,7 @@
 permalink: post-:year-:month-:day_:title.html
+collections:
+  projects:
+    output: true
 defaults:
   -
     scope:

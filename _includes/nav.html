@@ -3,21 +3,18 @@
         <a href="/" title="首頁">Home</a>
     </li>
     <li class="navigation__item{% if page.title == "News" or layout.news %} current{% endif %}">
-        <a href="news.html" title="消息">News</a>
+        <a href="/news.html" title="消息">News</a>
+    </li>
+    <li class="navigation__item{% if page.title == "Projects" %} current{% endif %}">
+        <a href="/projects.html" title="專案">Projects</a>
     </li>
     <li class="navigation__item{% if page.title == "Download" %} current{% endif %}">
-        <a href="download.html" title="下載">Download</a>
-    </li>
-    <li class="navigation__item{% if page.title == "Screenshots" %} current{% endif %}">
-        <a href="screenshots.html" title="擷圖">Screenshots</a>
+        <a href="/download.html" title="下載">Download</a>
     </li>
     <li class="navigation__item{% if page.title == "Development" %} current{% endif %}">
-        <a href="development.html" title="開發">Development</a>
-    </li>
-    <li class="navigation__item{% if page.title == "Support" %} current{% endif %}">
-        <a href="support.html" title="協助">Support</a>
+        <a href="/development.html" title="開發">Development</a>
     </li>
     <li class="navigation__item{% if page.title == "About" %} current{% endif %}">
-        <a href="about.html" title="關於">About</a>
+        <a href="/about.html" title="關於">About</a>
     </li>
 </ul>

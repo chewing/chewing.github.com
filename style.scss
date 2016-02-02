@@ -95,6 +95,10 @@ ul._inline {
 			margin: 0 auto;
 		}
 	}
+	h4 + time {
+		display: block;
+		text-indent: 1em;
+	}
 }
 
 #news {

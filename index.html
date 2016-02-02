@@ -12,10 +12,15 @@ title: Home
 {% if site.posts != empty %}
 <section>
 	<header>
-		<h3>最新消息<span>Latest News</span><time>{{ site.posts.first.date | date: "%Y-%m-%d" }}</time></h3>
-		<h4>{{ site.posts.first.title }}</h4>
+		<h3>最新消息<span>Latest News</span></h3>
 	</header>
-	{{ site.posts.first.content }}
+	<article>
+		<header>
+			<h4>{{ site.posts.first.title }}</h4>
+			<time>{{ site.posts.first.date | date: "%Y-%m-%d" }}</time>
+		</header>
+		{{ site.posts.first.content }}
+	</article>
 </section>
 {% endif %}
 <section>

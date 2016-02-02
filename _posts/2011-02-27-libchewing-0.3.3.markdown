@@ -1,5 +1,4 @@
 ---
-layout: post
 title: libchewing 0.3.3 版釋出
 ---
 libchewing 0.3.3 版釋出，這是新的發展系列，可下載使用，並請提供 feedback 與 bug-report。

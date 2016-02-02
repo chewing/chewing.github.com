@@ -1,10 +1,9 @@
 ---
-layout: post
 title: SCIM-chewing 0.3.4 版釋出
 ---
 SCIM-chewing 0.3.4 釋出，此版主要配合 libchewing 0.3.3 的若干修正，請下載使用，並請提供 bug-report。
 
-What's New in 0.3.4                                 
+What's New in 0.3.4
 ----------------------------------------------------------
 * Handle 0-9, "+-\*/" keys, Enter and '.' in keypad.
 * Handle F1-F18 keys properly.

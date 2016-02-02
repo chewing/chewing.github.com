@@ -1,5 +1,4 @@
 ---
-layout: post
 title: libchewing 0.3.5 Released
 ---
 libchewing 0.3.5 Released: 2013-07-28

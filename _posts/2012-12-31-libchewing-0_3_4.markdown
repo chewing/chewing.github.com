@@ -1,5 +1,4 @@
 ---
-layout: post
 title: libchewing 0.3.4 Released
 ---
 libchewing 0.3.4 Released: 2012-12-31

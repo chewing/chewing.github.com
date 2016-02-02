@@ -1,2 +1,13 @@
 permalink: post-:year-:month-:day_:title.html
-markdown: rdiscount
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

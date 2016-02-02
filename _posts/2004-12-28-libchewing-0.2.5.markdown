@@ -1,5 +1,4 @@
 ---
-layout: post
 title: libchewing 0.2.5 版釋出
 ---
 libchewing 0.2.5 版釋出，請下載取用。

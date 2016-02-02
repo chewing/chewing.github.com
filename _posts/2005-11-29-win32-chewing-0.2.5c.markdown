@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Win32-chewing 0.2.5c 釋出
 ---
 Win32-chewing 0.2.5c 釋出，請下載取用。

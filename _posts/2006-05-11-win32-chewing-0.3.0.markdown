@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Win32-chewing 0.3 版釋出
 ---
 Win32-chewing 0.3 版釋出，請下載取用。
@@ -7,4 +6,4 @@ Win32-chewing 0.3 版釋出，請下載取用。
 What's New in Win32-chewing 0.3
 ----------------------------------------------------------
 * Fix phrase duplication of binary form hash file.
-* Fix a bug in install toolkit. 
+* Fix a bug in install toolkit.

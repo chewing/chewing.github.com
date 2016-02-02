@@ -1,8 +1,7 @@
 ---
-layout: post
 title: libchewing-data transfer to git!
 ---
-libchewing-data is also moving to git! 
+libchewing-data is also moving to git!
 
 Now you can access the repository at:
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: SCIM-chewing 0.3.0 版釋出
 ---
 SCIM-chewing 0.3.0 釋出，這是新的發展系列，請下載使用，並請提供 feedback 與 bug-report。

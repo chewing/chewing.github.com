@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Win32-chewing 0.3.1 版釋出
 ---
 Win32-chewing 0.3.1 版釋出，請下載取用。
@@ -7,4 +6,4 @@ Win32-chewing 0.3.1 版釋出，請下載取用。
 What's New in Win32-chewing 0.3.1
 ----------------------------------------------------------
 * Installer can automatically uninstall older version.
-* Offer update notifier. 
+* Offer update notifier.

@@ -26,121 +26,20 @@ title: About
 	</header>
 	<p>貢獻於新酷音開發者列表：</p>
 	<ul id="contributor">
+		{% for contributor in site.data.contributors %}
 		<li>
-			<img src="http://www.gravatar.com/avatar/db87f22ac6851c692b1a66bba387996f?s=60" alt="jserv">
-			<a href="http://about.me/jserv">Jim Huang (jserv)</a>
-			<p>計畫協調、Release Manager。有心參與本計畫者，請來信告知</p>
-		</li>
-		<li>
-			<img src="http://www.gravatar.com/avatar/44278652691f460c5d53e96c71c7100f?s=60" alt="kanru">
-			<a href="http://kanru.info/">Kanru Chen</a>
-			<p>維護 libchewing、XCIN-chewing、SCIM-chewing、Win32-Chewing，與 OpenVanilla 模組</p>
-		</li>
-		<li>
-			<img src="http://www.gravatar.com/avatar/4d8c65b603554811079a7ea9b7aab9c0?s=60" alt="gugod">
-			<a href="http://gugod.org/">Kang-min Liu (gugod)</a>
-			<p>酷音輸入法最初的貢獻者，SpaceChewing 與 OpenVanilla 的開發者</p>
-		</li>
-		<li>
-			<img src="http://www.gravatar.com/avatar/6c465af55bd95e740446a095f344df3f?s=60" alt="zonble">
-			<a href="http://zonble.net/">Wei-zhong Yang (zonble)</a>
-			<p>SpaceChewing 與 OpenVanilla 輸入法架構的開發者</p>
-		</li>
-	<li>
-			<img src="http://www.gravatar.com/avatar/f0cc4b511c06b73afb23beb5695a83d6?s=60" alt="clkao">
-			<a href="http://search.cpan.org/~clkao/">Chia-liang Kao (clkao)</a>
-			<p>ChewingMacOSX 與 IIIMF-chewing 的草創者，XCIN 貢獻者</p>
-		</li>
-		<li>
-			<img src="http://www.gravatar.com/avatar/aa7f9a2cc34c774c2d8cecf8b8ce30aa?s=60" alt="definite">
-			<a href="http://dingyichen.wordpress.com/">Ding-Yi Chen</a>
-			<p>修正 libchewing 若干瑕疵並維護 ibus-chewing</p>
-		</li>
-		<li>
-			<img src="http://www.gravatar.com/avatar/169df253a45ad2be7f57305215eab80b?s=60" alt="lwhsu">
-			<a href="http://lwhsu.org/">Li-wen Hsu (lwhsu)</a>
-			<p>Hosting 與系統維護</p>
-		</li>
-		<li>
+			{% if contributor.gavatar %}
+			<img src="http://www.gravatar.com/avatar/{{ contributor.gavatar }}?s=60" alt="{{ contributor.id }}">
+			{% else %}
 			<div></div>
-			<a href="http://www.csie.ntu.edu.tw/~r92030/">Kuang-che Wu (kcwu)</a>
-			<p>libchewing 開發者，也是 XCIN 與 libtabe 現任維護者</p>
+			{% endif %}
+			<a href="{{ contributor.link }}">
+				{{ contributor.name }}
+				{% if contributor.id %} ({{ contributor.id }}) {% endif %}
+			</a>
+			<p>{{ contributor.info }}</p>
 		</li>
-		<li>
-			<div></div>
-			<a href="http://blog.lifestyle.idv.tw/~shiva/">Shiva Huang</a>
-			<p>RPM 套件維護與測試</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="http://wiki.debian.org/AndrewLee">Andrew Lee</a>
-			<p>Icon 設計與 Debian 套件維護</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="#">Jeff Chen</a>
-			<p>擴充 gugod 所設計的漢語拼音模組</p>
-	</li>
-	<li>
-	    <div></div>
-			<a href="http://pcman.sayya.org/">Hong Jen Yee (PCMan)</a>
-			<p>Win32-chewing 的開發者</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="http://www.seamxr.com/">James Huang (Sea Monster)</a>
-			<p>Win32-chewing 的開發者</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="#">Andy Horng</a>
-			<p>Win32-chewing 的開發者</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="http://blog.dejieshi.com/">Caius Chance</a>
-			<p>修正若干 libchewing 與 scim-chewing 的程式缺陷</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="https://plus.google.com/102919133545292787135/about">Tiberius Teng</a>
-			<p>貢獻選字捲頁的改進</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="http://utcr.org/">Youchen Lee</a>
-			<p>修正若干 scim-chewing 的程式缺陷</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="http://timhsu.chroot.org/">Tim Hsu (crazykid)</a>
-			<p>JMCCE 1.4.x 的維護者，整合第一個非 X Window System 環境的酷音輸入法支援</p>
-		</li>
-		<li>
-			<img src="http://www.gravatar.com/avatar/83582d4582ba6c15efa37c13cb1fded2.png?s=60" alt="czchen">
-			<a href="http://czchen.info/">ChangZhuo Chen (czchen)</a>
-			<p>修正若干 libchewing 程式缺陷</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="#">Wei-Hao Syu</a>
-			<p>Support THL (Taiwan Huayu Luomapinyin) and MPS2 Pinyin keyboard</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="https://github.com/hialan">Hialan Liu</a>
-			<p>Fix libchewing Windows build</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="#">Bo-cheng Jan</a>
-			<p>修正若干 libchewing 程式缺陷</p>
-		</li>
-		<li>
-			<div></div>
-			<a href="https://github.com/kito-cheng">Kito Cheng</a>
-			<p>修正若干 libchewing 程式缺陷</p>
-		</li>
+		{% endfor %}
 	</ul>
 </article>
 <article>

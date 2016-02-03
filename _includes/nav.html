@@ -5,7 +5,7 @@
     <li class="navigation__item{% if page.title == "News" or layout.news %} current{% endif %}">
         <a href="/news.html" title="消息">News</a>
     </li>
-    <li class="navigation__item{% if page.title == "Projects" %} current{% endif %}">
+    <li class="navigation__item{% if page.title == "Projects" or page.collection == "projects" %} current{% endif %}">
         <a href="/projects.html" title="專案">Projects</a>
     </li>
     <li class="navigation__item{% if page.title == "Download" %} current{% endif %}">

@@ -1,87 +1,14 @@
 ---
 title: Projects
 ---
-<ul>
-	{% for project in site.projects %}
-	<li>
-		<a href="{{ project.url }}">{{ project.title }}</a>
-	</li>
-	{% endfor %}
-</ul>
-<article>
-	<header>
-		<h3><b>fcitx</b> 輸入法模組</h3>
-		<p>透過 <a href="https://fcitx-im.org/">fcitx輸入法框架</a></p>
-	</header>
-	<p><img src="screenshots/fcitx-chewing.png" alt=" [Screenshot of fcitx-chewing] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>OVIME-chewing</b> 輸入法模組</h3>
-		<p>透過 <a href="http://www.openvanilla.org/">OpenVanilla</a></p>
-	</header>
-	<p><img src="screenshots/ovime-chewing.png" alt=" [Screenshot of OVIME-chewing] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>SCIM-chewing</b> 輸入法模組 (OnTheSpot Input style)</h3>
-	</header>
-		<p><img src="screenshots/scim-chewing-onthespot.png" alt=" [Screenshot of SCIM-chewing (OnTheSpot)] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>SCIM-chewing</b> 輸入法模組 (OverTheSpot input style)</h3>
-	</header>
-		<p><img src="screenshots/scim-chewing-overthespot.png" alt=" [Screenshot of SCIM-chewing (OverTheSpot)] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>SCIM-chewing</b> 輸入法模組搭配 SCIM 螢幕小鍵盤</h3>
-	</header>
-		<p><img src="screenshots/scim-input-pad.png" alt=" [Screenshot of SCIM-chewing and SCIM Input Pad] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>IIIMF-chewing</b> 輸入法引擎</h3>
-	</header>
-	<p>
-		<img src="screenshots/iiimf-chewing-01.png" alt=" [Screenshot of IIIMF-Chewing (1)] " /><br />
-		<img src="screenshots/iiimf-chewing-02.png" alt=" [Screenshot of IIIMF-Chewing (2)] " /><br />
-		<img src="screenshots/iiimf-chewing-03.png" alt=" [Screenshot of IIIMF-Chewing (3)] " /><br />
-		<img src="screenshots/iiimf-chewing-04.png" alt=" [Screenshot of IIIMF-Chewing (4)] " /><br />
-		<img src="screenshots/iiimf-chewing-05.png" alt=" [Screenshot of IIIMF-Chewing (5)] " /><br />
-		<img src="screenshots/iiimf-chewing-06.png" alt=" [Screenshot of IIIMF-Chewing (6)] " /><br />
-		<img src="screenshots/iiimf-chewing-07.png" alt=" [Screenshot of IIIMF-Chewing (7)] " />
-	</p>
-</article>
-<article>
-	<header>
-		<h3><b>TCh_LE-chewing</b></h3>
-		<p>Sun JDS (Java Desktop System) 中以 IIIMF 為基礎的繁體中文輸入引擎，內建新酷音輸入法</p>
-	</header>
-	<p>
-		<a href="screenshots/jds-chewing.png" alt="Setting Screentshot">設定畫面<br /><img src="screenshots/jds-chewing-small.png" /></a><br />
-		<a href="screenshots/jds-chewing-input.png" alt="Input Screenshot">輸入畫面<br /><img src="screenshots/jds-chewing-input-small.png" /></a>
-	</p>
-</article>
-<article>
-	<header>
-		<h3><b>screen-chewing</b> 外掛程式</h3>
-		<p>讓 GNU screen 直接使用酷音輸入法</p>
-	</header>
-	<p><img src="screenshots/screen-chewing.png" alt=" [Screenshot of screen-chewing] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>JMCCE-chewing</b> 輸入法子系統</h3>
-		<p>JMCCE 內建的酷音輸入法</p>
-	</header>
-	<p><img src="screenshots/jmcce-chewing.png" alt=" [Screenshot of JMCCE-chewing] " /></p>
-</article>
-<article>
-	<header>
-		<h3><b>XCIN-chewing</b> 輸入法模組</h3>
-		<p>老字號 XCIN 的酷音輸入法 (最早的樣貌)</p>
-	</header>
-	<p><img src="screenshots/xcin-chewing.png" alt=" [Screenshot of XCIN-chewing] " /></p>
+<article id="projects">
+	<h2> {{ page.title }}</h2>
+	<ul>
+		{% assign projects = site.projects | sort: 'order' %}
+		{% for project in projects %}
+		<li>
+			<a href="{{ project.url }}">{{ project.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
 </article>

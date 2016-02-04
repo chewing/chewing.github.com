@@ -1,23 +1,8 @@
 <ul class="navigation__list">
-    <li class="navigation__item{% if page.title == "Home" %} current{% endif %}">
-        <a href="/" title="首頁">Home</a>
-    </li>
-    <li class="navigation__item{% if page.title == "News" or layout.news %} current{% endif %}">
-        <a href="/news.html" title="消息">News</a>
-    </li>
-    <li class="navigation__item{% if page.title == "Features" %} current{% endif %}">
-        <a href="/features.html" title="特色">Features</a>
-    </li>
-    <li class="navigation__item{% if page.title == "Projects" or page.collection == "projects" %} current{% endif %}">
-        <a href="/projects.html" title="專案">Projects</a>
-    </li>
-    <li class="navigation__item{% if page.title == "Download" %} current{% endif %}">
-        <a href="/download.html" title="下載">Download</a>
-    </li>
-    <li class="navigation__item{% if page.title == "Development" %} current{% endif %}">
-        <a href="/development.html" title="開發">Development</a>
-    </li>
-    <li class="navigation__item{% if page.title == "About" %} current{% endif %}">
-        <a href="/about.html" title="關於">About</a>
-    </li>
+{% for item in site.navigation %}
+	{% capture slug %}{{item.title | slugify %}}{% endcapture %}
+	<li class="navigation__item{% if page.title == item.title or page.collection == slug or layout[slug] %} current{% endif %}">
+		<a href="{{ item.path }}" title="{{ item.title }}">{{ item.name }}</a>
+	</li>
+{% endfor %}
 </ul>

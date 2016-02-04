@@ -15,6 +15,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	font-size: 16px;
 }
 
 ._hide {
@@ -29,12 +30,15 @@ ul._inline {
 	}
 }
 
-.logo {
-	float: right;
+h1 {
 	display: inline-block;
-	padding: .5em 0;
-	margin-right: 1em;
+	font-size: 1.5em;
+	margin: 0;
 	color: $font-color;
+	align-self: center;
+	a {
+		padding: 0 1em;
+	}
 }
 
 .navigation {
@@ -43,6 +47,10 @@ ul._inline {
 	position: fixed;
 	z-index: 9999;
 	border-bottom: 1px solid $font-color;
+	display: flex;
+	nav {
+		align-self: flex-end;
+	}
 	a {
 		text-decoration: none;
 		color: $font-color;
@@ -53,16 +61,16 @@ ul._inline {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	padding-left: 1em;
-	vertical-align: bottom;
 }
 
 .navigation__item {
 	display: inline-block;
 	margin: 0 .5em;
-	padding: .8em .5em;
 	position: relative;
-	line-height: 1.2em;
+	a {
+		display: inline-block;
+		padding: .8em .5em;
+	}
 	&.current::after {
 		display: block;
 		content: '';
@@ -172,7 +180,7 @@ h2, h3 {
 }
 
 h2 {
-	margin: 1em auto;
+	margin: 0 auto 1em;
 	background-image: linear-gradient(transparent calc(100% - .3em), #434343 calc(100% - .3em));
 }
 

@@ -16,31 +16,21 @@ defaults:
       layout: "post"
 navigation:
   -
-    path: /
-    name: 首頁
-    title: Home
-  -
-    path: /news.html
     name: 消息
     title: News
   -
-    path: /features.html
     name: 特色
     title: Features
   -
-    path: /projects.html
     name: 專案
     title: Projects
   -
-    path: /download.html
     name: 下載
     title: Download
   -
-    path: /development.html
     name: 開發
     title: Development
   -
-    path: /about.html
     name: 關於
     title: About
 gems:

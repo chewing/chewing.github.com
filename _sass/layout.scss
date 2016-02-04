@@ -1,38 +1,87 @@
-#nav-trigger {display: none;}
+@media screen and (min-width: 581px) {
 
-@media screen and (min-width: 832px) {
-    nav > label  {
-        display: none;
-    }
+	nav > label, nav > input {
+		display: none;
+	}
+
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 580px) {
 
-    .navigation__list, .navigation__item.current::after {display: none;}
+	.navigation {
+		display: block;
+	}
+
+	h1 {
+		padding: .5em 0;
+	}
+
+    .navigation__list, .navigation__item.current::after {
+		display: none;
+	}
 
     nav {
-        min-height: 2.5em;
         height:auto;
-        width: 100%;
-
+		input {
+			position: absolute;
+			top: 0;
+			right: 0;
+			visibility: hidden;
+		}
         label {
+			position: absolute;
+			top: .5em;
+			right: .5em;
             display: block;
-
-            img {padding: .5em 1em;}
+			width: 3em;
+			height: 3em;
+            background-image: radial-gradient(.2em at center, #fff 0%, #fff .1em, transparent);
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: .3em;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-image: radial-gradient(.2em at center, #fff 0%, #fff .1em, transparent);
+			}
+			&::before {
+				top: .75em;
+			}
+			&::after {
+				bottom: .75em;
+			}
         }
+		input:checked ~ label {
+			background: none;
+			&::before, &::after {
+				background-size: 2em .2em;
+				background-image: linear-gradient(#fff .2em, transparent calc(100% - .2em));
+			}
+			&::before {
+				transform-origin: left;
+				transform: rotate(45deg) translate(0, -1em);
+			}
+			&::after {
+				transform-origin: right;
+				transform: rotate(-45deg) translate(1.2em, -1.5em);
+			}
+		}
 
         input:checked ~ ul.navigation__list {
-            display: block;
+            display: flex;
             line-height: 1.5em;
-
+			flex-wrap: wrap;
             li {
-                display: inline-block;
-                margin: 0;
-                width: 300px;
-
+                display: block;
+                width: 100%;
+				max-width: 200px;
+				text-align: center;
+				margin: 0 auto;
                 a {
                     display: block;
-                    padding: .25em 1em;
+					margin: 0 auto;
+                    padding: 1em 0;
                 }
             }
         }
@@ -70,7 +119,6 @@
     }
 
 	footer {
-        position: static;
         width: 95%;
         padding: 1em 2.5%;
 	}

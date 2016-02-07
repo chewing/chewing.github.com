@@ -18,10 +18,6 @@ body {
 	font-size: 16px;
 }
 
-._hide {
-	display: none;
-}
-
 ul._inline {
 	list-style-type: none;
 	padding: 0;
@@ -41,49 +37,52 @@ h1 {
 	}
 }
 
-.navigation {
+body > header {
 	background-color: $bg-color1;
 	width: 100%;
 	position: fixed;
 	z-index: 9999;
 	border-bottom: 1px solid $font-color;
-	display: flex;
-	nav {
-		align-self: flex-end;
-	}
 	a {
 		text-decoration: none;
 		color: $font-color;
 	}
 }
 
-.navigation__list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
+nav {
+	h2 {
+		display: none;
+	}
 
-.navigation__item {
-	display: inline-block;
-	margin: 0 .5em;
-	position: relative;
-	a {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
 		display: inline-block;
-		padding: .8em .5em;
-	}
-	&.current::after {
-		display: block;
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 3px;
-		background-color: $font-color;
-		bottom: 0;
-		left: 0;
+		margin: 0 .5em;
+		position: relative;
+		a {
+			display: inline-block;
+			padding: .8em .5em;
+		}
+		&.current::after {
+			display: block;
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: $font-color;
+			bottom: 0;
+			left: 0;
+		}
 	}
 }
 
-#content {
+main {
+	line-height: 1.5em;
 	padding: 4em 2em 4em;
 	border-radius: 0.5em;
 	color: $font-color;
@@ -96,8 +95,7 @@ h1 {
 		word-break: break-all;
 	}
 	p {
-		text-indent: 2em;
-		line-height: 1.5em;
+		padding: 0 1em;
 		img {
 			display: block;
 			margin: 0 auto;
@@ -106,34 +104,64 @@ h1 {
 	h4 {
 		text-indent: 1em;
 	}
-	h4 + time {
-		display: block;
-		text-indent: 1em;
+
+}
+
+#extra {
+	header {
+		position: relative;
+	}
+	h4 {
+		padding-bottom: .5em;
+		background-size: calc(100% - 2em);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: linear-gradient(transparent calc(100% - .1em), $bg-color2 calc(100% - .1em));
+	}
+	time {
+		position: absolute;
+		background-color: #434343;
+		padding: .2em .5em;
+		right: 1em;
+		top: -2.5em;
 	}
 }
 
 #news {
 	list-style-type: none;
-	border-left: 2px solid $bg-color2;
-	margin-left: 4em;
+	padding-left: 4em;
 	li {
 		padding: 1em 0;
 		margin: .5em 0;
 	}
 	time {
-		margin: 1em 2em 3em -6em;
-		background-color: $bg-color2;
+		margin: 0 1em;
+		background-color: #434343;
 		padding: .5em;
 		border-radius: .3em;
+	}
+}
+
+#post {
+	header {
+		position: relative;
+	}
+	time {
+		position: absolute;
+		background-color: #434343;
+		padding: .2em .5em;
+		right: 1em;
+		bottom: -1em;
 	}
 }
 
 #projects {
 	ul {
 		list-style-type: none;
+		margin: 0 0 1em;
 	}
 	li {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin: .5em 0;
 	}
 }
@@ -141,20 +169,24 @@ h1 {
 #contributor {
 	list-style-type: none;
 	margin: 0;
+	padding: 2em 0;
 	li {
-		a {
-			margin-left: 2em;
+		min-height: 120px;
+		margin-bottom: 2em;
+		a::after {
+			content: attr(title);
+			text-align: center;
 		}
-		padding: 1em 0;
 		img {
 			border-radius: 50%;
-			border: 3px solid $font-color;
+			border: 4px solid $font-color;
 			float: left;
+			margin: 0 1em;
 		}
 		div {
 			@extend img;
-			height: 60px;
-			width: 60px;
+			height: 80px;
+			width: 80px;
 			background-color: $bg-color2;
 		}
 	}
@@ -171,7 +203,8 @@ h2, h3 {
 		float: right;
 		margin-right: 1em;
 	}
-	span {
+	&::after {
+		content: attr(title);
 		display: inline-block;
 		margin-left: .5em;
 		padding-left: .5em;
@@ -189,10 +222,10 @@ h3 {
 }
 
 .status {
-	margin-left: 2em;
+	text-align: center;
 }
 
-footer {
+main + footer {
 	padding: 1em;
 	text-align: center;
 	color: $font-color;

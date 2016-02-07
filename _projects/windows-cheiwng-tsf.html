@@ -57,7 +57,7 @@ repository: https://github.com/chewing/windows-chewing-tsf
 		<p>A：出現框框即是目前您的系統字體不足，無法顯示該字，請自行下載補丁修正 (目前微軟已經取消提供字型下載，改為和最新版本 MS Office 搭售)。</p>
 
 		<p>Q9：我可以自己編輯詞庫嗎？</p>
-		<p>A：可以的，如果是要編輯靜態詞庫&nbsp;(內建詞庫)&nbsp;，請參照&nbsp;pcman&nbsp;寫的 <a href="chewing_dict_edit.html">	詞庫編輯教學</a> ；如果是要編輯動態詞庫&nbsp;(使用者詞庫)&nbsp;，請參照說明手冊。</p>
+		<p>A：可以的，如果是要編輯靜態詞庫&nbsp;(內建詞庫)&nbsp;，請參照&nbsp;pcman&nbsp;寫的 <a href="/chewing_dict_edit.html">	詞庫編輯教學</a> ；如果是要編輯動態詞庫&nbsp;(使用者詞庫)&nbsp;，請參照說明手冊。</p>
 
 		<p>Q10：編輯靜態詞庫好麻煩喔，有沒有已經打包好的程式可以下載？</p>
 		<p>A：有的，請到新酷音在&nbsp;<a href="http://of.openfoundry.org/">openfoundry</a> &nbsp;成立的子計畫&nbsp;<a href="http://of.openfoundry.org/projects/436/">libchewing-data</a>，在<a href="http://of.openfoundry.org/projects/436/download"> 下載區</a>可以找到目前釋出的詞庫&nbsp;(libchewingdata-xxx.exe，其中xxx為版本號)，安裝方法如Q4。</p>
@@ -68,7 +68,7 @@ repository: https://github.com/chewing/windows-chewing-tsf
 		<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp;Changlog&nbsp;是這樣寫的阿&hellip;為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
 
 		<p>
-			A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\&nbsp;裡面的&nbsp;ch_index.dat,&nbsp;dict.dat,&nbsp;fonetree.dat,&nbsp;ph_index.dat,&nbsp;us_freq.dat)&nbsp;和動態詞庫&nbsp;(使用者詞庫，檔名是&nbsp;uhash.dat&nbsp;，在&nbsp;C:\Documents and Settings\使用者\ApplicationData\Chewing\)&nbsp;兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去&hellip;)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br />
+			A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\ 裡面的 ch_index.dat, dict.dat, fonetree.dat, ph_index.dat, us_freq.dat) 和動態詞庫&nbsp;(使用者詞庫，檔名是 uhash.dat ，在 C:\Documents and Settings\使用者\ApplicationData\Chewing\)&nbsp;兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去&hellip;)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br />
 			當然，如果在內建詞庫裡面有的詞，ex：如「螫舌」未從內建詞庫中刪除，縱使從&nbsp;uhash.dat&nbsp;中刪除了「螫舌」一詞，但是因為內建詞庫中還是可以找到，所以還會出現，解決方法就是從內建詞庫中刪除&nbsp;(參照&nbsp;pcman&nbsp;寫的<a href="chewing_dict_edit.html">詞庫編輯教學</a>)&nbsp;。</p>
 
 		<p>Q13：動態詞庫&nbsp;(使用者詞庫)&nbsp;裡面有好多單字，那並不是詞阿，刪掉了也會重複出現，請問那是甚麼？</p>

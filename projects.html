@@ -2,7 +2,7 @@
 title: Projects
 ---
 <article id="projects">
-	<h2> {{ page.title }}</h2>
+	<h2 title="{{ page.title }}">專案模組</h2>
 	<ul>
 		{% assign projects = site.projects | sort: 'order' %}
 		{% for project in projects %}

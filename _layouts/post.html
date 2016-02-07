@@ -2,11 +2,10 @@
 layout: default
 news: true
 ---
-<article>
+<article id="post">
 	<header>
-		<h3>{{ page.title }}<time>{{ page.date | date: "%Y-%m-%d" }}</time></h3>
+		<h2>{{ page.title }}</h2>
+		<time>{{ page.date | date: "%Y-%m-%d" }}</time>
 	</header>
-	<div id="post">
-		{{ content }}
-	</div>
+	{{ content }}
 </article>

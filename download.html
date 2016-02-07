@@ -2,60 +2,58 @@
 title: Download
 ---
 <article>
-	<header>
-		<h3>下載<span>Tarball</span></h3>
-		<p>
-			各專案釋出的檔案可在 Github 的專案頁面下載。
-			例如 <a href="https://github.com/chewing/libchewing/releases">libchewing</a>。
-		</p>
-	</header>
-</article>
-<article>
-	<header>
-		<h3>微軟視窗環境<span>Windows Platform</span></h3>
-	</header>
-	<p><a href="https://github.com/chewing/windows-chewing/releases">Microsoft Windows 98/2000/XP</a></p>
-	<p><a href="https://github.com/Chocobo1/windows-chewing-tsf-build">Microsoft Windows Vista/7/8/10</a></p>
-</article>
-<article>
-	<header>
-		<h3>開源作業系統<span>Linux Desktop</span></h3>
-	</header>
-	<p>現今的主流發行版大多採用IBus輸入法框架，如果有收錄進套件庫的話，請安裝 ibus-chewing 即可。</p>
-	<p>Ubuntu PPA: <a href="https://launchpad.net/~chewing/+archive/chewing">chewing daily build ppa</a></p>
-</article>
-<article>
-	<header>
-		<h3>編譯<span>Build from Source Tarball</span></h3>
-	</header>
-	<p>以 Debian GNU/Linux 為例：</p>
-	<ul>
-		<li>build-essential : C/C++ 開發環境</li>
-		<li>autoconf</li>
-		<li>automake</li>
-		<li>libtool</li>
-		<li><a href="http://check.sourceforge.net/">check</a> : unit testing framework for C</li>
-	</ul>
-	<p>其它還需要以下套件：</p>
-	<ul>
-		<li>libscim-dev : SCIM-chewing 所需</li>
-		<li>iiimf-dev : IIIMF-chewing 所需</li>
-	</ul>
-</article>
-<article>
-	<header>
-		<h3>套件<span>Pre-compiled Package</span></h3>
+	<h2 title="{{ page.title}}">下載</h2>
+	<p>
+		各專案釋出的檔案可在 Github 的專案頁面下載。
+		例如 <a href="https://github.com/chewing/libchewing/releases">libchewing</a>。
+	</p>
+	<section>
+		<header>
+			<h3 title="Windows Platform">微軟視窗環境</h3>
+		</header>
+		<p><a href="https://github.com/chewing/windows-chewing/releases">Microsoft Windows 98/2000/XP</a></p>
+		<p><a href="https://github.com/Chocobo1/windows-chewing-tsf-build">Microsoft Windows Vista/7/8/10</a></p>
+	</section>
+	<section>
+		<header>
+			<h3 title="Linux Desktop">開源作業系統</h3>
+		</header>
+		<p>現今的主流發行版大多採用IBus輸入法框架，如果有收錄進套件庫的話，請安裝 ibus-chewing 即可。</p>
+		<p>Ubuntu PPA: <a href="https://launchpad.net/~chewing/+archive/chewing">chewing daily build ppa</a></p>
+	</section>
+	<section>
+		<header>
+			<h3 title="Build from Source Tarball">編譯</h3>
+		</header>
+		<p>以 Debian GNU/Linux 為例：</p>
 		<ul>
-			<li>提供給 Microsoft Windows 平台的安裝程式 (setup.exe)，適用於 Windows 98/ME/2000/XP</li>
-			<li>Mandriva (前身為 Mandrake) Linux 已正式收錄 libchewing 與 SCIM-chewing</li>
-			<li>Debian GNU/Linux 已正式收錄 libchewing 與 SCIM-chewing，也可取得最新的非正式套件： APT /etc/apt/sources.list<br /><b>deb http://apt.debian.org.tw unstable main</b></li>
-			<li>SuSE (Official)</li>
-			<li>Fedora 已正式收錄 libchewing 與 SCIM-chewing</li>
-			<li>Gentoo Linux 已收錄 libchewing 與 SCIM-chewing，更新部份可參考 Gentoo Taiwan (GOT) 維護的 <a href="http://www.gentoo.tw/proj/ebuild/ebuild.xml">ebuild</a></li>
-			<li>FreeBSD 已收錄於 ports，可參見 FreeBSD chinese :: <a href="http://www.freebsdsoftware.org/chinese/libchewing.html">libchewing</a> / <a href="http://www.freebsdsoftware.org/chinese/scim-chewing.html">scim-chewing</a></li>
-			<li>NetBSD 已收錄於 pkgsrc，可參見 <a href="http://pkgsrc.se/wip/scim-chewing">scim-chewing</a></li>
-			<li>OpenBSD 已收錄於 ports，可參見 <a href="http://openports.se/chinese/libchewing">libchewing</a> 與 <a href="http://openports.se/inputmethods/scim-chewing">scim-chewing</a></li>
-			<li>Sun Microsystems 的 JDS (Java Desktop System) 與 Solaris 已內建新酷音輸入法 (IIIMF-chewing / SCIM-chewing)，請更新軟體版本</li>
+			<li>build-essential : C/C++ 開發環境</li>
+			<li>autoconf</li>
+			<li>automake</li>
+			<li>libtool</li>
+			<li><a href="http://check.sourceforge.net/">check</a> : unit testing framework for C</li>
 		</ul>
-	</header>
+		<p>其它還需要以下套件：</p>
+		<ul>
+			<li>libscim-dev : SCIM-chewing 所需</li>
+			<li>iiimf-dev : IIIMF-chewing 所需</li>
+		</ul>
+	</section>
+	<section>
+		<header>
+			<h3 title="Pre-compiled Package">套件</h3>
+			<ul>
+				<li>提供給 Microsoft Windows 平台的安裝程式 (setup.exe)，適用於 Windows 98/ME/2000/XP</li>
+				<li>Mandriva (前身為 Mandrake) Linux 已正式收錄 libchewing 與 SCIM-chewing</li>
+				<li>Debian GNU/Linux 已正式收錄 libchewing 與 SCIM-chewing，也可取得最新的非正式套件： APT /etc/apt/sources.list<br /><b>deb http://apt.debian.org.tw unstable main</b></li>
+				<li>SuSE (Official)</li>
+				<li>Fedora 已正式收錄 libchewing 與 SCIM-chewing</li>
+				<li>Gentoo Linux 已收錄 libchewing 與 SCIM-chewing，更新部份可參考 Gentoo Taiwan (GOT) 維護的 <a href="http://www.gentoo.tw/proj/ebuild/ebuild.xml">ebuild</a></li>
+				<li>FreeBSD 已收錄於 ports，可參見 FreeBSD chinese :: <a href="http://www.freebsdsoftware.org/chinese/libchewing.html">libchewing</a> / <a href="http://www.freebsdsoftware.org/chinese/scim-chewing.html">scim-chewing</a></li>
+				<li>NetBSD 已收錄於 pkgsrc，可參見 <a href="http://pkgsrc.se/wip/scim-chewing">scim-chewing</a></li>
+				<li>OpenBSD 已收錄於 ports，可參見 <a href="http://openports.se/chinese/libchewing">libchewing</a> 與 <a href="http://openports.se/inputmethods/scim-chewing">scim-chewing</a></li>
+				<li>Sun Microsystems 的 JDS (Java Desktop System) 與 Solaris 已內建新酷音輸入法 (IIIMF-chewing / SCIM-chewing)，請更新軟體版本</li>
+			</ul>
+		</header>
+	</section>
 </article>

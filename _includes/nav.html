@@ -1,10 +1,10 @@
 <nav>
-	<h2 class="_hide">Navigation</h2>
+	<h2>Navigation</h2>
 	<input type="checkbox" id="nav-trigger" />
 	<label for="nav-trigger"></label>
-	<ul class="navigation__list">
+	<ul>
 	{% for item in site.navigation %}{% capture slug %}{{item.title | slugify %}}{% endcapture %}
-		<li class="navigation__item{% if page.title == item.title or page.collection == slug or layout[slug] %} current{% endif %}">
+		<li{% if page.title == item.title or page.collection == slug or layout[slug] %} class="current"{% endif %}>
 			<a href="/{{ slug }}.html" title="{{ item.title }}">{{ item.name }}</a>
 		</li>
 	{% endfor %}

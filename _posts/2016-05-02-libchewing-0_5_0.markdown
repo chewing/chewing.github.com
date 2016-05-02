@@ -1,0 +1,53 @@
+---
+title: libchewing 0.5.0 Released
+---
+libchewing 0.5.0 Released: 2016-05-02
+
+What's New in libchewing 0.5.0
+---------------------------------------------------------
+
+* New feature
+  - Add Carpalx keyboard layout support #217.
+
+* Dictionary
+  - Update dictionary #151 #155 #188 #191 #201.
+  - Add debug tool: `dump_database`.
+  - Sort tsi.src #212.
+
+* Misc
+  - Tweak several comments.
+  - Fix libchewing document.
+  - Remove old/dead code.
+  - Improve code readability and consistency.
+  - Update automake syntax #114.
+  - Add test cases #169 #177.
+  - Update Python sample code.
+  - Add debug tool dump_database.
+  - Integrate coverity scan in https://scan.coverity.com/.
+
+* Platform-specific
+  - Update README for OS X.
+  - Set `WITH_INTERNAL_SQLITE3` to true by default in MS-Windows.
+  - Fix Visual Studio compiling warnings/errors #168 #171 #189 #190 #213.
+  - Add a cmake option `BUILD_DLL` to enable building `*.dll` with MS VC++ #185.
+  - Make the python binding of libchewing support Windows dll files #186.
+  - Don't use SIGSTOP in MS-Windows.
+
+* Bug fixed
+  - Check if ld supports --no-defined #144.
+  - Fix unexpected candidate disorder for '1' #153
+  - Replace bash-izm '==' operator with '=' for test(1) # 158.
+  - Fix several Coverity errors #172 #173.
+  - Fix ChewingKillChar which is disabling OpenSymbolChoice #160 #181.
+  - ㄅ cannot overwrite ㄆ in HSU and ET26 #170 #183.
+
+* Successful stories:
+  - Rime Input Method Engine (RIME) takes partial dictionary from
+    libchewing.
+  - PIME (writing input methods for Windows easily with Python) supports
+    Chewing IM by default.
+
+[Download](https://github.com/chewing/libchewing/releases/tag/v0.5.0)
+
+* File Name: libchewing-0.5.0.tar.bz2
+* SHA512: 98062be9c218d6261c3796db760e3e6a8d45252d79c6c9bb9e539bcef37a23b05f6660327f4d73f0b3e957e011cb00351a236d7a7fa56147377ce00c82a56700

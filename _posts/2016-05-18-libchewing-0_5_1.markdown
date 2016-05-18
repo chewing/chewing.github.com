@@ -1,0 +1,16 @@
+---
+title: libchewing 0.5.1 Released
+---
+libchewing 0.5.1 Released: 2016-05-18
+
+What's New in libchewing 0.5.1
+---------------------------------------------------------
+
+* Bug fixed:
+  - Fix wrong CHEWING_DATADIR definition in CMake build #222.
+  - Fix j, k selection when symbol in between #149 #221.
+
+[Download](https://github.com/chewing/libchewing/releases/tag/v0.5.1)
+
+* File Name: libchewing-0.5.1.tar.bz2
+* SHA512: a6551661bb5e56bba59730b93b373db56af7d42f2ab4881fbfff8727689dd2604d42d2e5c0b04820df66a431dfb5fcb73cc5c9b538615da76198ee3635501c1f

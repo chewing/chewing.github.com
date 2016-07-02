@@ -1,0 +1,15 @@
+---
+title: scin-chewing 0.5.1 Released
+---
+scim-chewing 0.5.1 Released: 2016-05-11
+
+What's New in scim-chewing 0.5.1
+---------------------------------------------------------
+
+* Support libchewing 0.4.0 APIs
+* Fix THL and MPS2 Pinyin configurations
+
+[Download](https://github.com/chewing/scim-chewing/releases/tag/v0.5.1)
+
+* File Name: scim-chewing-0.5.1.tar.gz
+* SHA512: b6bdac1f9f1e412877a24761674bedb89134764c2b3aec70f2b395bac00bd3239c7feb6d0001943d9bbf857115af2cc7526e958d46feb2eda0fa5042359888ef

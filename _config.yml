@@ -1,4 +1,4 @@
-permalink: post-:year-:month-:day_:title.html
+permalink: posts/:year-:month-:day-:title.html
 collections:
   projects:
     output: true

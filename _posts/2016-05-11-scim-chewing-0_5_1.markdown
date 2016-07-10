@@ -1,5 +1,5 @@
 ---
-title: scin-chewing 0.5.1 Released
+title: scim-chewing 0.5.1 Released
 ---
 scim-chewing 0.5.1 Released: 2016-05-11
 

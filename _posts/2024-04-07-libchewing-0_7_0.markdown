@@ -1,0 +1,69 @@
+---
+title: libchewing 0.7.0 Released
+---
+libchewing 0.7.0 Released: 2024-04-07
+
+What's New in libchewing 0.7.0
+---------------------------------------------------------
+
+This is the first beta release of the Rust rewrite. The library has been tested
+with the AFL++ fuzzer and most of the obvious bugs have been fixed so it should
+not crash for normal use. Now we invite power users to daily drive the beta
+release in order to find more subtle bugs.
+
+The Rust rewrite is ABI compatiable with previous releases. The most notable
+difference with the C version includes a new portable dictionary format that can
+be used both as system dictionary and user dictionary. Users with existing user
+phrase dictionary will be automatically migrated. Old files will be backed up
+automatically. With these change we will be able to support dictionary sharing
+and loading multiple dictionaries in future releases.
+
+* Future roadmap
+  - 0.8.x after bug bashing this version will be the first public release with
+    rust implementation as the default.
+  - 0.9.x will focus on the stablization of the Rust crate API.
+  - 1.0.0 will be the first public release of the Rust API. C implementation
+    will be removed from the repository.
+
+* Added
+  - Added Colemak-DH ANSI/Orth layout support
+  - Replace bespoke RIFF+TLV file format with standard DER format (rust)
+  - Supporting migrating user dictionary file to new format. (rust)
+  - Allow creating in memory user dictionary (rust)
+  - New `chewing-cli` tool can be used to create or inspect dictionary files. (rust)
+  - New `chewing-cli` tool can dump dictionary as or import from CSV file. (rust)
+  - Audit dependencies using cargo-vet (rust)
+
+* Changed
+  - Buffer user dictionary changes and flush in background without blocking main
+    thread (rust)
+
+* Bug fixed
+  - Some unsigned underflow issue found by afl++ (rust)
+  - Skip symbol selection if preedit buffer is empty (rust)
+  - Allow numlock in selection mode (rust)
+  - Avoid infinite recursion (rust)
+  - Ensure to return KeyBehavior::Commit when we push to commit buffer (rust)
+  - Adjust selection offset after delete symbols (rust)
+  - Disable trace logging if no logger is enabled (rust)
+  - Should not start selection in English mode (rust)
+  - Use offset to select from paginated phrase list (rust)
+
+* Documentation
+  - Added document for fuzzers (rust)
+  - Describe how to compile dictionary files
+  - Update build instruction and Rust MSRV info
+
+* Testing
+  - Added a fuzzer harness with afl++ (rust)
+
+* Files
+
+  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.xz>
+  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.xz.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.xz.sha256>
+
+libchewing releases can be verified with minisign
+
+    minisign -Vm libchewing-0.7.0.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

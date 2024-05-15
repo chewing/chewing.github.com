@@ -59,9 +59,9 @@ and loading multiple dictionaries in future releases.
 
 * Files
 
-  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.xz>
-  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.xz.minisig>
-  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.xz.sha256>
+  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.7.0/libchewing-0.7.0.tar.zst.sha256>
 
 libchewing releases can be verified with minisign
 

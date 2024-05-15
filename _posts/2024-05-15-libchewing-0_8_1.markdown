@@ -1,0 +1,22 @@
+---
+title: libchewing 0.8.1 Released
+---
+libchewing 0.8.1 Released: 2024-05-15
+
+What's New in libchewing 0.8.1 (May 15, 2024)
+---------------------------------------------------------
+
+* Buf fixed
+
+  - Fail to build on aarch64 due to type mismatch. (introduced in v0.8.0)
+
+* Files
+
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.1/libchewing-0.8.1.tar.xz>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.1/libchewing-0.8.1.tar.xz.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.1/libchewing-0.8.1.tar.xz.sha256>
+
+libchewing releases can be verified with minisign
+
+    minisign -Vm libchewing-0.8.1.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

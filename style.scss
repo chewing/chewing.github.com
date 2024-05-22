@@ -107,6 +107,9 @@ main {
 	details {
 		margin: 1em;
 	}
+	details > summary {
+		cursor: pointer;
+	}
 	h4 {
 		text-indent: 1em;
 	}

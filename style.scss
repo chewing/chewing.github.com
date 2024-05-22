@@ -101,10 +101,15 @@ main {
 			margin: 0 auto;
 		}
 	}
+	pre {
+		padding: 0 4em;
+	}
+	details {
+		margin: 1em;
+	}
 	h4 {
 		text-indent: 1em;
 	}
-
 }
 
 #extra {

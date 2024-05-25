@@ -1,0 +1,24 @@
+---
+title: libchewing 0.8.3 Released
+---
+libchewing 0.8.3 Released: 2024-05-25
+
+What's New in libchewing 0.8.3
+---------------------------------------------------------
+
+* Changed
+  - Simplified build options on the Windows platform.
+  - Enabled CTest BUILD_TESTING option to disable tests.
+  - Default uses system Corrosion if available.
+* Bug fixed
+  - Fix more wrong Hsu (許氏) keyboard fuzz conversion (ㄍㄧ to ㄐㄧ and ㄍㄩ to
+    ㄐㄩ) (introduced in v0.8.0)
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.3/libchewing-0.8.3.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.3/libchewing-0.8.3.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.3/libchewing-0.8.3.tar.zst.sha256>
+
+libchewing releases can be verified with minisign
+
+    minisign -Vm libchewing-0.8.3.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

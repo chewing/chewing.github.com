@@ -1,0 +1,23 @@
+---
+title: libchewing 0.8.4 Released
+---
+libchewing 0.8.4 Released: 2024-06-01
+
+What's New in libchewing 0.8.4
+---------------------------------------------------------
+
+* Bug fixed
+  - Config options were incorrectly reset after certain operations. (introduced
+    in v0.8.0)
+  - Incorrect mapping for KB_DVORAK and KB_DVORAK_HSU layouts. (introduced in
+    v0.8.0)
+  - Installation failure if build with testing off. (introduced in v0.8.3)
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.4/libchewing-0.8.4.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.4/libchewing-0.8.4.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.4/libchewing-0.8.4.tar.zst.sha256>
+
+libchewing releases can be verified with minisign
+
+    minisign -Vm libchewing-0.8.4.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

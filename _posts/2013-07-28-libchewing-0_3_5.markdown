@@ -13,7 +13,7 @@ What's New in libchewing 0.3.5
 * travis-ci support (https://travis-ci.org/chewing/libchewing)
 * drone.io support (https://drone.io/github.com/chewing/libchewing)
 * coveralls.io support (https://coveralls.io/r/chewing/libchewing)
-* editorconfig support (http://editorconfig.org/)
+* editorconfig support (https://editorconfig.org/)
 * Add new chewing_set_logger API
 * Prevent unaligned memory access
 * Reduce maxChiSymbolLen to 39 to avoid overflow

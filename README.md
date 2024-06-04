@@ -1,3 +1,3 @@
 # Chewing Project Website
 
-Use [Jekeyll](http://jekyllrb.com/) to build pages.
+Use [Jekeyll](https://jekyllrb.com/) to build pages.

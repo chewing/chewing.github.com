@@ -24,7 +24,7 @@ What's New in libchewing 0.3.1
 * Fix portability issues on FreeBSD.
 * Fix incorrect initialization.
 * Fix pinyin key order, put "shun" before "shuo".
-* Fix various potenital boffer overflow bugs.
+* Fix various potenital buffer overflow bugs.
 * Fix various memory leaks.
 * chewing_set_PinYinMethod to support multiple PinYin methods.
 * chewing_handle_CtrlOption was removed.

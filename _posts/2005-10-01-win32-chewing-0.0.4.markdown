@@ -5,7 +5,7 @@ Win32-chewing 0.0.4 版釋出，請下載取用。
 
 What's New in Win32-chewing 0.0.4
 ----------------------------------------------------------
-* Succesfully ported to Microsoft Windows®.
+* Successfully ported to Microsoft Windows®.
 * Add a configuration dialog where users can choose different keyboard layouts.
 * Add a toolbar button to switch between Chinese/English mode.
 * New installer and uninstaller

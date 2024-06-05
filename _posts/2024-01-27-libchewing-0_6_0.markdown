@@ -48,7 +48,7 @@ to have more frequent releases in the following months.
   - Fix strncpy warning in hash.c [Bo-Cheng Jhan].
   - Fix unable to input some Bopomofos with ET26 layout [Hiunn-hué]. #235
   - Fix double free in userphrase-hash's TerminateUserphrase [cwlin]. #254
-  - Fix hash item offsett calculation in uhash [cwlin]. #255
+  - Fix hash item offset calculation in uhash [cwlin]. #255
   - Fix ChoiceEndChoice expression always true [Billy Su]. #258
   - Fix clearing bopomofo buffer after switching Chi-Eng mode [Hiunn-hué]. #268
   - Fix chewing_handle_Space cannot input space with empty buffer [Hiunn-hué]. #274

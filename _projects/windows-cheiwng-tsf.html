@@ -65,7 +65,7 @@ repository: https://github.com/chewing/windows-chewing-tsf
 		<p>Q11：為什麼要成立&nbsp;libchewing-data&nbsp;子計畫？</p>
 		<p>A：考慮到程式編寫人員一方面要寫程式，一方面又要管理詞庫，負荷較大，如果成立子計畫，專門負責詞庫的管理，一方面可以讓程式編寫人員負擔減輕，另一方面又可以讓更多不會程式但是想加入的朋友加入&nbsp;(換句話說，負責詞庫不一定要有程式基礎，人人都可以參與)。</p>
 
-		<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp;Changlog&nbsp;是這樣寫的阿&hellip;為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
+		<p>Q12：疑？這些詞不是已經從靜態詞庫&nbsp;(內建詞庫)&nbsp;中&nbsp;新增／刪除&nbsp;了嗎？&nbsp;Changelog&nbsp;是這樣寫的阿&hellip;為什麼還會&nbsp;打不出來／出現&nbsp;？</p>
 
 		<p>
 			A：ChewingServer.exe&nbsp;會從靜態詞庫&nbsp;(內建詞庫，c:\windows\system32\ime\ 裡面的 ch_index.dat, dict.dat, fonetree.dat, ph_index.dat, us_freq.dat) 和動態詞庫&nbsp;(使用者詞庫，檔名是 uhash.dat ，在 C:\Documents and Settings\使用者\ApplicationData\Chewing\)&nbsp;兩個地方找詞，如果內建詞庫裡面沒有的詞句，而在&nbsp;uhash.dat&nbsp;中可以找到詞句還是會出現，ex：我交給「擬了」，「擬了」一詞在內建詞庫中沒有，而在&nbsp;uhash.dat&nbsp;有找到，當打出上述語句時，「擬了」這個詞還是會出現，如果把&nbsp;uhash.dat&nbsp;中的「擬了」一詞刪除，因為內建詞庫和&nbsp;uhash.dat&nbsp;中都找不到，「擬了」就永遠消失了&nbsp;(除非你再加進去&hellip;)&nbsp;，還有如果有編輯過&nbsp;uhash.dat&nbsp;請記得存檔。<br />

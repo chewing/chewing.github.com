@@ -5,7 +5,7 @@ Win32-chewing 0.2.0 釋出，請下載取用。
 
 What's New in Win32-chewing 0.2.0
 ----------------------------------------------------------
-* Attemp to support multi-monitor. (Not tested)
+* Attempt to support multi-monitor. (Not tested)
 * Use new dictionary with new format and many fix.
 * Support vertical composition mode.
 * Display visual notification when user phrases are addad.

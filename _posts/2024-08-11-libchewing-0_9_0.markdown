@@ -1,0 +1,90 @@
+---
+title: libchewing 0.9.0 Released
+---
+libchewing 0.9.0 Released: 2024-08-11
+
+What's New in libchewing 0.9.0 (August 11, 2024)
+---------------------------------------------------------
+
+* Features
+  - Support two new input modes:
+    - Fuzzy mode - support prefix search, partial zhuyin search, toneless input.
+    - Simple mode - like the traditional input method on Windows 95 which does
+      not perform any intelligent phrasing.
+  - Allow space key for pagination regardless of space_is_select_key mode.
+  - Merge DOWN and SPACE key behavior in pagination.
+  - A new option to disable fullwidth toggle key.
+  - Workman layout support.
+  - Load embedded mini dictionary if system dictionaries were not found.
+  - Automatically load extra dictionaries found in search path
+    - ${CHEWING_PATH}/dictionary.d/*.dat
+  - Automatic snapshot selections when the curser is moved.
+* Developer Features
+  - BREAKING: Remove language_mode and character_form methods (Rust).
+  - BREAKING: Remove unused pinyin.tab file
+  - BREAKING: Remove most unused C code but keep compat C headers.
+  - Bump minimum supported Rust version to 1.77
+  - Enable ELF symbol versioning. All existing symbols are marked as version
+    CHEWING_0.5 and new symbols from this release are marked as CHEWING_0.9.
+  - A new set of configuration API:
+    - chewing_config_has_option
+    - chewing_config_get_int
+    - chewing_config_set_int
+    - chewing_config_get_str
+    - chewing_config_set_str
+  - New API to get runtime library version:
+    - chewing_version
+    - chewing_version_major
+    - chewing_version_minor
+    - chewing_version_patch
+    - chewing_version_extra
+  - New API to acknowledge output buffers:
+    - chewing_ack
+  - Define version macros
+    - CHEWING_VERSION_MAJOR
+    - CHEWING_VERSION_MINOR
+    - CHEWING_VERSION_PATCH
+* Bug Fixes
+  - Separate special handling by pinyin variants (#298)
+  - Panic when selecting phrases backwards at the end of buffer. (introduced in
+    v0.8.0)
+* Dictionary
+  - Default dictionary updates and fixes (#331)
+* Performance
+  - Optimize K shortest path algorithm to handle long pre-edit buffer. This
+    allowed us to remove the special DP algorithm and keep only the graph search
+    based algorithm in conversion.
+* Testing
+  - Add benchmarks for the conversion module
+  - Add tests for options and default values
+  - Add test for chewing_config_set_str
+  - Test chewing_config_set_str with chewing.keyboard_type
+  - Allow switching keyboard layout in genkeystroke
+  - Add test for simple engine symbol input
+  - Support new editor options in the fuzzer.
+  - Generate test cases from fuzzer input.
+* Miscellaneous Tasks
+  - Drop outdated ChangeLog
+  - Add option to turn off tests run
+  - Use system corrosion if available
+  - Regenerate chewing.h using latest cbindgen
+  - Include CTest and use the built-in BUILD_TESTING option
+  - Manage SQLite dependency with CMake
+  - Print status about SQLite3 module
+  - Remove unused test files
+  - Bump Corrosion to v0.5
+  - Fix building without using CMake presets
+  - Force linking chewing_version obj file
+  - Append `git describe` to version string for unreleased version.
+* New Contributors
+  - @chenrui333 made their first contribution in https://github.com/chewing/libchewing/pull/560
+  - @wusyong made their first contribution in https://github.com/chewing/libchewing/pull/582
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.0/libchewing-0.9.0.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.0/libchewing-0.9.0.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.0/libchewing-0.9.0.tar.zst.sha256>
+
+libchewing releases can be verified with minisign
+
+    minisign -Vm libchewing-0.9.0.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

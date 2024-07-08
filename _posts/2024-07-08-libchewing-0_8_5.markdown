@@ -1,0 +1,22 @@
+---
+title: libchewing 0.8.5 Released
+---
+libchewing 0.8.5 Released: 2024-07-08
+
+What's New in libchewing 0.8.5 (July 8, 2024)
+---------------------------------------------------------
+
+* Changed
+  - Bump default Corrosion version to v0.5
+* Bug fixed
+  - Hanyu Pinyin empty rime handling. (#585, introduced in v0.8.0, reported by Jidanni)
+  - Printable non A-Z chars should output symbols in pinyin. (#592, introduced in v0.8.0, reported by Jidanni)
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.5/libchewing-0.8.5.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.5/libchewing-0.8.5.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.8.5/libchewing-0.8.5.tar.zst.sha256>
+
+libchewing releases can be verified with minisign
+
+    minisign -Vm libchewing-0.8.5.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

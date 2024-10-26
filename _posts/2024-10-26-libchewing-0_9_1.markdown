@@ -1,0 +1,28 @@
+---
+title: libchewing 0.9.1 Released
+---
+libchewing 0.9.1 Released: 2024-10-26
+
+What's New in libchewing 0.9.1 (October 26, 2024)
+---------------------------------------------------------
+
+* Bug Fixes
+  - Disable automatic selections snapshot which introduced more problems then
+    what it tried to solve. (introduced in v0.9.0)
+* Build
+  - Statically link C runtime on Windows
+  - Use vcpkg on Windows
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.1/libchewing-0.9.1.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.1/libchewing-0.9.1.tar.zst.asc>
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.1/libchewing-0.9.1.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.9.1/libchewing-0.9.1.tar.zst.sha256>
+
+libchewing releases can be verified with OpenPGP
+
+    gpgv libchewing-0.9.1.tar.zst.asc libchewing-0.9.1.tar.zst
+
+or minisign
+
+    minisign -Vm libchewing-0.9.1.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

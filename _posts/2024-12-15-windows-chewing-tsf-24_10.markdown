@@ -5,7 +5,7 @@ title: windows-chewing-tsf 24.10 釋出
 
 https://github.com/chewing/windows-chewing-tsf/releases/tag/v24.10
 
-### 🚀 新功能
+**🚀 新功能**
 
 * 改用 MSI 格式的安裝檔，讓升級或是測試新版本更容易
 * 新的註冊系統輸入法的方式，相容 MSI 升版跟退版
@@ -19,12 +19,12 @@ https://github.com/chewing/windows-chewing-tsf/releases/tag/v24.10
   - 使用 9patch 格式的圖片繪製選字框，提供自訂主題的可能性 (目前無設定界面)
 * 支援根據系統佈景主題切換系統圖示亮暗
 
-### 🐛 修正的問題
+**🐛 修正的問題**
 
 * 修正切換英數模式後錯誤輸入的注音不會取消的問題
 * 修正部份 MS Office 產品會顯示黑框的問題 (請幫忙測試)
 
-### ⚙️ 其他
+**⚙️ 其他**
 
 * 未來的版本會採用 YY.MM 的版號不定期的更新
 * 這是多年來的第一次重大更新，還請大家多多測試

@@ -3,7 +3,7 @@ title: windows-chewing-tsf 24.10 釋出
 ---
 從這裡下載原始碼跟我們提供的安裝檔：
 
-https://github.com/chewing/windows-chewing-tsf/releases/tag/v24.10
+<https://github.com/chewing/windows-chewing-tsf/releases/tag/v24.10>
 
 **🚀 新功能**
 

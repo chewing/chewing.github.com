@@ -1,0 +1,24 @@
+---
+title: ibus-chewing 2.1.3 Released
+---
+ibus-chewing 2.1.3 Released: 2025-01-01
+
+What's New in ibus-chewing 2.1.3 (January 1, 2025)
+---------------------------------------------------------
+
+* Fixed
+  - Fix crashes by ensuring always free chewing objects with chewing_free.
+* Files
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.3/ibus-chewing-2.1.3-Source.tar.xz>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.3/ibus-chewing-2.1.3-Source.tar.xz.asc>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.3/ibus-chewing-2.1.3-Source.tar.xz.minisig>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.3/ibus-chewing-2.1.3-Source.tar.xz.sha256>
+
+ibus-chewing releases can be verified with OpenPGP
+
+    gpgv ibus-chewing-2.1.3-Source.tar.xz.asc ibus-chewing-2.1.3-Source.tar.xz
+
+ibus-chewing releases can be verified with minisign
+
+    minisign -Vm ibus-chewing-2.1.3-Source.tar.xz \
+        -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

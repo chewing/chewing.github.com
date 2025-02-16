@@ -1,0 +1,24 @@
+---
+title: ibus-chewing 2.1.4 Released
+---
+ibus-chewing 2.1.4 Released: 2025-02-16
+
+What's New in ibus-chewing 2.1.4 (February 16, 2025)
+---------------------------------------------------------
+
+* Fixed
+  - Fix ignored selection key setting when candidate per page is less than 10.
+* Files
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.4/ibus-chewing-2.1.4-Source.tar.xz>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.4/ibus-chewing-2.1.4-Source.tar.xz.asc>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.4/ibus-chewing-2.1.4-Source.tar.xz.minisig>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.4/ibus-chewing-2.1.4-Source.tar.xz.sha256>
+
+ibus-chewing releases can be verified with OpenPGP
+
+    gpgv ibus-chewing-2.1.4-Source.tar.xz.asc ibus-chewing-2.1.4-Source.tar.xz
+
+ibus-chewing releases can be verified with minisign
+
+    minisign -Vm ibus-chewing-2.1.4-Source.tar.xz \
+        -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

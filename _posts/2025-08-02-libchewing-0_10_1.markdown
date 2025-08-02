@@ -1,0 +1,29 @@
+---
+title: libchewing 0.10.1 Released
+---
+libchewing 0.10.1 Released: 2025-08-02
+
+What's New in libchewing 0.10.1 (August 2, 2025)
+---------------------------------------------------------
+
+* Features
+  - cli: Ignore empty lines or lines starts with # when processing dictionary
+* Bug Fixes
+  - Add missing bopomofo mapping to the GinYieh layout
+  - Correct IBM layout mapping
+* Dictionary
+  - Import improvements from libchewing-data
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.1/libchewing-0.10.1.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.1/libchewing-0.10.1.tar.zst.asc>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.1/libchewing-0.10.1.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.1/libchewing-0.10.1.tar.zst.sha256>
+
+libchewing releases can be verified with OpenPGP
+
+    gpgv libchewing-0.10.1.tar.zst.asc libchewing-0.10.1.tar.zst
+
+or minisign
+
+    minisign -Vm libchewing-0.10.1.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

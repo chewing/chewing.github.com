@@ -1,0 +1,26 @@
+---
+title: libchewing 0.10.2 Released
+---
+libchewing 0.10.2 Released: 2025-08-14
+
+What's New in libchewing 0.10.2 (August 14, 2025)
+---------------------------------------------------------
+
+* Bug Fixes
+  - Fix ㄈㄥ was incorrectly mapped to 風靡
+* Dictionary
+  - Added missing bopomofo for 風靡
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.2/libchewing-0.10.2.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.2/libchewing-0.10.2.tar.zst.asc>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.2/libchewing-0.10.2.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.2/libchewing-0.10.2.tar.zst.sha256>
+
+libchewing releases can be verified with OpenPGP
+
+    gpgv libchewing-0.10.2.tar.zst.asc libchewing-0.10.2.tar.zst
+
+or minisign
+
+    minisign -Vm libchewing-0.10.2.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

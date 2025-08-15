@@ -9,8 +9,8 @@ What's New in ibus-chewing 2.1.5 (February 18, 2025)
 * Features
   - Add Colemak layout.
 * Fixed
-	- Ensure Ctrl+Space is passed to ibus correctly, not absorbed
-	- Re-enable using Down key to select candidates in vertical panel
+  - Ensure Ctrl+Space is passed to ibus correctly, not absorbed
+  - Re-enable using Down key to select candidates in vertical panel
 * Files
   - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.5/ibus-chewing-2.1.5-Source.tar.xz>
   - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.5/ibus-chewing-2.1.5-Source.tar.xz.asc>

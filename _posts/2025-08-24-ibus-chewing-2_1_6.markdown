@@ -1,0 +1,24 @@
+---
+title: ibus-chewing 2.1.6 Released
+---
+ibus-chewing 2.1.6 Released: 2025-08-24
+
+What's New in ibus-chewing 2.1.6 (August 24, 2025)
+---------------------------------------------------------
+
+* Fixed
+  - Do not block UI thread when spawning ibus-setup-chewing (#262, #263)
+* Files
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.6/ibus-chewing-2.1.6-Source.tar.xz>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.6/ibus-chewing-2.1.6-Source.tar.xz.asc>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.6/ibus-chewing-2.1.6-Source.tar.xz.minisig>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.6/ibus-chewing-2.1.6-Source.tar.xz.sha256>
+
+ibus-chewing releases can be verified with OpenPGP
+
+    gpgv ibus-chewing-2.1.6-Source.tar.xz.asc ibus-chewing-2.1.6-Source.tar.xz
+
+ibus-chewing releases can be verified with minisign
+
+    minisign -Vm ibus-chewing-2.1.6-Source.tar.xz \
+        -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

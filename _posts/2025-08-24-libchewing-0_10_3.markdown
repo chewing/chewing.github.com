@@ -1,0 +1,26 @@
+---
+title: libchewing 0.10.3 Released
+---
+libchewing 0.10.3 Released: 2025-08-24
+
+What's New in libchewing 0.10.3 (August 24, 2025)
+---------------------------------------------------------
+
+* Bug Fixes
+  - Fix quick symbol menu for ｜(introduced in 0.8.0) (#737)
+* Dictionary
+  - Remove some incorrect phrase-bopomofo mapping entries
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.3/libchewing-0.10.3.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.3/libchewing-0.10.3.tar.zst.asc>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.3/libchewing-0.10.3.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.10.3/libchewing-0.10.3.tar.zst.sha256>
+
+libchewing releases can be verified with OpenPGP
+
+    gpgv libchewing-0.10.3.tar.zst.asc libchewing-0.10.3.tar.zst
+
+or minisign
+
+    minisign -Vm libchewing-0.10.3.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

@@ -1,7 +1,7 @@
 <releases>
   <!-- https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html -->
-  <release version="25.8.1.468" date="2025-08-17" type="development">
-    <url>https://github.com/chewing/windows-chewing-tsf/releases/tag/nightly-25.8.1.468</url>
+  <release version="25.8.1.469" date="2025-08-24" type="development">
+    <url>https://github.com/chewing/windows-chewing-tsf/releases/tag/nightly-25.8.1.469</url>
   </release>
   <release version="25.8.1.0" date="2025-07-31" type="stable">
     <url>https://github.com/chewing/windows-chewing-tsf/releases/tag/v25.8.1.0</url>

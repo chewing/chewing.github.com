@@ -1,0 +1,27 @@
+---
+title: ibus-chewing 2.1.7 Released
+---
+ibus-chewing 2.1.7 Released: 2025-09-06
+
+What's New in ibus-chewing 2.1.7 (September 6, 2025)
+---------------------------------------------------------
+
+* Changed
+  - Shift key now only triggers mode change if it is released immediately after key press.
+  - Introduce meson build system. CMake support will be removed in future.
+* Fixed
+  - Erroneously repeated Backspace key by ignore key release unless it is a Shift key. (#266)
+* Files
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.7/ibus-chewing-2.1.7.tar.xz>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.7/ibus-chewing-2.1.7.tar.xz.asc>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.7/ibus-chewing-2.1.7.tar.xz.minisig>
+  - <https://github.com/chewing/ibus-chewing/releases/download/v2.1.7/ibus-chewing-2.1.7.tar.xz.sha256sum>
+
+ibus-chewing releases can be verified with OpenPGP
+
+    gpgv ibus-chewing-2.1.7.tar.xz.asc ibus-chewing-2.1.7.tar.xz
+
+ibus-chewing releases can be verified with minisign
+
+    minisign -Vm ibus-chewing-2.1.7.tar.xz \
+        -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

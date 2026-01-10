@@ -1,0 +1,66 @@
+---
+title: libchewing 0.11.0 Released
+---
+libchewing 0.11.0 Released: 2026-01-10
+
+What's New in libchewing 0.11.0 (January 10, 2026)
+---------------------------------------------------------
+
+* Features
+  - cli: Now outputs and reads dictionary metadata in source file
+  - cli: Detects mismatched phrase word count and syllable count
+  - cli: Ignores empty line or line starts with # when processing dictionary
+  - editor: Support optional sorting candidates by frequency. Previously the
+    candidates are always sorted by their order in the dictionary.
+* Developer Features
+  - New API `chewing_handle_KeyboardEvent()` can be used to support any
+    keyboard layout combination without updating libchewing. Other keyboard
+    handling API will be deprecated in future release.
+  - New API `chewing_new3()` and `chewing_get_defaultDictonaryNames()` can be
+    used to initialize a chewing context with specific dictionaries enabled.
+  - New boolean config option `chewing.sort_candidates_by_frequency` can be
+    set to enable sorting candidates by frequency.
+  - Rust type SyllableSlice is removed from public interfaces.
+  - Provide libchewing as a Swift package (C based API only).
+* Bug Fixes
+  - Auto shift cursor after candidate selection now moves the cursor to the
+    next phrase instead of the next word.
+  - Fixed a bug when switching input mode from Chinese to English, the state
+    can be stuck in entering bopomofo.
+  - Fixed the frequency estimation function used by phrase learning to really
+    take last used time into consideration. Also assign higher frequency to
+    newly learned phrases.
+* Changes
+  - SQLite support is now fully optional and disabled by default
+  - rust: new sqlite-bundled feature can be used to build with bundled sqlite
+    to simplify the build configuration on Windows
+  - cli: will try to migrate to new schema when dumping chewing.sqlite3 file
+  - Use less heuristic when calculating phrase segmentation score.
+  - Reimplement scoring algorithm to use conditional probability.
+  - cli: init-database will no longer normalize the frequency of single word
+    phrase to zero.
+  - autolearn: new phrases with break words inside will be learned both with
+    and without the break word.
+  - rust: simplified dictionary API.
+  - rust: the DictionaryMut trait is merged back to the Dictionary trait.
+  - rust: the Editor::set_editor_options now accepts a closure for setting
+    options in place.
+* Dictionary
+  - Default symbols.dat now includes commonly used emojis.
+  - Dictionary data are built directly from the libchewing-data repository
+* Build
+  - Bump MSRV to 1.88
+* Files
+  - <https://github.com/chewing/libchewing/releases/download/v0.11.0/libchewing-0.11.0.tar.zst>
+  - <https://github.com/chewing/libchewing/releases/download/v0.11.0/libchewing-0.11.0.tar.zst.asc>
+  - <https://github.com/chewing/libchewing/releases/download/v0.11.0/libchewing-0.11.0.tar.zst.minisig>
+  - <https://github.com/chewing/libchewing/releases/download/v0.11.0/libchewing-0.11.0.tar.zst.sha256>
+
+libchewing releases can be verified with OpenPGP
+
+    gpgv libchewing-0.11.0.tar.zst.asc libchewing-0.11.0.tar.zst
+
+or minisign
+
+    minisign -Vm libchewing-0.11.0.tar.zst \
+             -P RWRzJFnXiLZleAyCIv1talBjyRewelcy9gzYQq9pd3SKSFBPoy57sf5s

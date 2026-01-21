@@ -1,7 +1,7 @@
 <releases>
   <!-- https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html -->
-  <release version="26.1.1.504" date="2026-01-17" type="development">
-    <url>https://github.com/chewing/windows-chewing-tsf/releases/tag/nightly-26.1.1.504</url>
+  <release version="26.1.1.505" date="2026-01-21" type="development">
+    <url>https://github.com/chewing/windows-chewing-tsf/releases/tag/nightly-26.1.1.505</url>
   </release>
   <release version="26.1.2.0" date="2026-01-17" type="stable">
     <url>https://github.com/chewing/windows-chewing-tsf/releases/tag/v26.1.2.0</url>
